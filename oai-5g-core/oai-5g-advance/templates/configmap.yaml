@@ -4,4 +4,5 @@ metadata:
   name: {{ .Chart.Name }}
 data:
   {{ (.Files.Glob "config.yaml").AsConfig | indent 2 | trim }}
+  {{ (.Files.Glob "config2.yaml").AsConfig | indent 2 | trim }}
   {{ (.Files.Glob "nssf_slice_config.yaml").AsConfig | indent 2 | trim }}
