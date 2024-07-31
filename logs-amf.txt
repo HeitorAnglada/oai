@@ -1,0 +1,891 @@
+[2024-07-31 02:58:31.866] [amf_app] [start] Options parsed!
+[2024-07-31 02:58:31.866] [system] [debug] Parsing the configuration file, file type YAML.
+[2024-07-31 02:58:31.866] [config ] [info] Reading NF configuration from /openair-amf/etc/config.yaml
+[2024-07-31 02:58:31.872] [config ] [debug] Unknown NF upf in configuration. Ignored
+[2024-07-31 02:58:31.872] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-07-31 02:58:31.872] [config ] [debug] Validating configuration of log_level
+[2024-07-31 02:58:31.874] [config ] [info] ==== OPENAIRINTERFACE amf vBranch: HEAD Abrev. Hash: 2c31091d Date: Tue Jan 23 14:46:05 2024 +0100 ====
+[2024-07-31 02:58:31.874] [config ] [info] Basic Configuration:
+[2024-07-31 02:58:31.874] [config ] [info]   - log_level..................................: info
+[2024-07-31 02:58:31.874] [config ] [info]   - register_nf................................: Yes
+[2024-07-31 02:58:31.874] [config ] [info]   - http_version...............................: 2
+[2024-07-31 02:58:31.874] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-07-31 02:58:31.874] [config ] [info]   AMF:
+[2024-07-31 02:58:31.874] [config ] [info]     - host.....................................: oai-amf
+[2024-07-31 02:58:31.874] [config ] [info]     - SBI
+[2024-07-31 02:58:31.874] [config ] [info]       + URL....................................: http://oai-amf:80
+[2024-07-31 02:58:31.874] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:31.874] [config ] [info]       + IPv4 Address ..........................: 10.244.0.86
+[2024-07-31 02:58:31.874] [config ] [info]     - N2
+[2024-07-31 02:58:31.874] [config ] [info]       + Port...................................: 38412
+[2024-07-31 02:58:31.874] [config ] [info]       + IPv4 Address ..........................: 10.244.0.86
+[2024-07-31 02:58:31.874] [config ] [info]       + MTU....................................: 1500
+[2024-07-31 02:58:31.874] [config ] [info]       + Interface name: .......................: eth0
+[2024-07-31 02:58:31.874] [config ] [info]     - Instance ID..............................: 1
+[2024-07-31 02:58:31.874] [config ] [info]     - PID Directory............................: /var/run
+[2024-07-31 02:58:31.874] [config ] [info]     - AMF Name.................................: OAI-AMF
+[2024-07-31 02:58:31.874] [config ] [info]     - Support Features Options
+[2024-07-31 02:58:31.874] [config ] [info]       + Enable Simple Scenario.................: No
+[2024-07-31 02:58:31.874] [config ] [info]       + Enable NSSF............................: Yes
+[2024-07-31 02:58:31.874] [config ] [info]       + Enable SMF Selection...................: No
+[2024-07-31 02:58:31.874] [config ] [info]     - Relative Capacity........................: 30
+[2024-07-31 02:58:31.874] [config ] [info]     - Emergency Support........................: No
+[2024-07-31 02:58:31.874] [config ] [info]     - Served GUAMI List
+[2024-07-31 02:58:31.874] [config ] [info]       + MCC....................................: 001
+[2024-07-31 02:58:31.874] [config ] [info]         MNC....................................: 01
+[2024-07-31 02:58:31.874] [config ] [info]         AMF Region ID..........................: 01
+[2024-07-31 02:58:31.874] [config ] [info]         AMF Set ID.............................: 001
+[2024-07-31 02:58:31.874] [config ] [info]         AMF Pointer............................: 01
+[2024-07-31 02:58:31.874] [config ] [info]     - PLMN Support List
+[2024-07-31 02:58:31.874] [config ] [info]       + MCC....................................: 001
+[2024-07-31 02:58:31.874] [config ] [info]         MNC....................................: 01
+[2024-07-31 02:58:31.874] [config ] [info]         TAC....................................: 1
+[2024-07-31 02:58:31.874] [config ] [info]             - NSSAI
+[2024-07-31 02:58:31.874] [config ] [info]                   + SST........................: 1
+[2024-07-31 02:58:31.874] [config ] [info]                     SD.........................: ffffff
+[2024-07-31 02:58:31.874] [config ] [info]                   + SST........................: 1
+[2024-07-31 02:58:31.874] [config ] [info]                     SD.........................: FFFFFF
+[2024-07-31 02:58:31.874] [config ] [info]     - Supported Integrity Algorithms
+[2024-07-31 02:58:31.874] [config ] [info]       + .......................................: NIA1
+[2024-07-31 02:58:31.874] [config ] [info]       + .......................................: NIA2
+[2024-07-31 02:58:31.874] [config ] [info]     - Supported Encryption Algorithms
+[2024-07-31 02:58:31.874] [config ] [info]       + .......................................: NEA0
+[2024-07-31 02:58:31.874] [config ] [info]       + .......................................: NEA1
+[2024-07-31 02:58:31.874] [config ] [info]       + .......................................: NEA2
+[2024-07-31 02:58:31.874] [config ] [info] Peer NF Configuration:
+[2024-07-31 02:58:31.874] [config ] [info]   NSSF:
+[2024-07-31 02:58:31.874] [config ] [info]     - host.....................................: oai-nssf
+[2024-07-31 02:58:31.874] [config ] [info]     - SBI
+[2024-07-31 02:58:31.874] [config ] [info]       + URL....................................: http://oai-nssf:80
+[2024-07-31 02:58:31.874] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:31.874] [config ] [info]   NRF:
+[2024-07-31 02:58:31.874] [config ] [info]     - host.....................................: oai-nrf
+[2024-07-31 02:58:31.874] [config ] [info]     - SBI
+[2024-07-31 02:58:31.874] [config ] [info]       + URL....................................: http://oai-nrf:80
+[2024-07-31 02:58:31.874] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:31.874] [config ] [info]   UDM:
+[2024-07-31 02:58:31.874] [config ] [info]     - host.....................................: oai-udm
+[2024-07-31 02:58:31.874] [config ] [info]     - SBI
+[2024-07-31 02:58:31.874] [config ] [info]       + URL....................................: http://oai-udm:80
+[2024-07-31 02:58:31.874] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:31.874] [config ] [info]   AUSF:
+[2024-07-31 02:58:31.875] [config ] [info]     - host.....................................: oai-ausf
+[2024-07-31 02:58:31.875] [config ] [info]     - SBI
+[2024-07-31 02:58:31.875] [config ] [info]       + URL....................................: http://oai-ausf:80
+[2024-07-31 02:58:31.875] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:31.875] [itti] [start] Starting...
+[2024-07-31 02:58:31.875] [itti] [start] Started
+[2024-07-31 02:58:31.875] [amf_app] [start] Creating AMF application functionality layer
+[2024-07-31 02:58:31.875] [itti] [info] Starting timer_manager_task
+[2024-07-31 02:58:31.875] [itti] [warning] Could not set schedparam to ITTI task 0, err=1
+[2024-07-31 02:58:31.877] [amf_n1] [start] amf_n1 started
+[2024-07-31 02:58:31.878] [sctp] [info] Created socket (3)
+[2024-07-31 02:58:31.878] [ngap] [info] Set N2 AMF IPv4 Addr 10.244.0.86, port 38412
+[2024-07-31 02:58:31.878] [sctp] [info] Create pthread to receive SCTP message
+[2024-07-31 02:58:31.879] [amf_n2] [start] amf_n2 started
+[2024-07-31 02:58:31.881] [amf_sbi] [start] amf_sbi started
+[2024-07-31 02:58:31.881] [amf_app] [start] Started timer (1)
+[2024-07-31 02:58:31.881] [amf_sbi] [info] Receive Register NF Instance Request, handling ...
+[2024-07-31 02:58:31.881] [amf_server] [info] HTTP2 server started
+[2024-07-31 02:58:31.881] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:58:31.881] [amf_sbi] [info] HTTP message Body: {"amfInfo":{"amfRegionId":"01","amfSetId":"001","guamiList":[{"amfId":"10041","plmnId":{"mcc":"001","mnc":"01"}}]},"capacity":100,"custom_info":null,"heartBeatTimer":50,"ipv4Addresses":["10.244.0.86"],"nfInstanceId":"3ca638cd-9d71-4d35-b91c-7ba169984385","nfInstanceName":"OAI-AMF","nfServices":[{"ipEndPoints":[{"ipv4Address":"10.244.0.86","port":80,"transport":"TCP"}],"nfServiceStatus":"REGISTERED","scheme":"http","serviceInstanceId":"namf_communication","serviceName":"namf_communication","versions":[{"apiFullVersion":"1.0.0","apiVersionInUri":"v1"}]}],"nfStatus":"REGISTERED","nfType":"AMF","priority":1,"sNssais":[{"sd":"ffffff","sst":1},{"sd":"ffffff","sst":1}]}
+[2024-07-31 02:58:31.882] [amf_sbi] [info] Get response with HTTP code (201)
+[2024-07-31 02:58:31.882] [amf_sbi] [info] Get response with Json content: {"amfInfo":{"amfRegionId":"01","amfSetId":"001","guamiList":[{"amfId":"10041","plmnId":{"mcc":"001","mnc":"01"}}]},"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["10.244.0.86"],"json_data":null,"nfInstanceId":"3ca638cd-9d71-4d35-b91c-7ba169984385","nfInstanceName":"OAI-AMF","nfServices":[{"ipEndPoints":[{"ipv4Address":"10.244.0.86","port":80,"transport":""}],"nfServiceStatus":"REGISTERED","scheme":"http","serviceInstanceId":"namf_communication","serviceName":"namf_communication","versions":[{"apiFullVersion":"1.0.0","apiVersionInUri":"v1"}]}],"nfStatus":"REGISTERED","nfType":"AMF","priority":1,"sNssais":[{"sd":"ffffff","sst":1},{"sd":"ffffff","sst":1}]}
+[2024-07-31 02:58:41.883] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:58:41.883] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:58:41.883] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:58:41.941] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:58:41.942] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:58:41.942] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:58:51.881] [amf_app] [info] 
+[2024-07-31 02:58:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 02:58:51.881] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 02:58:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] 
+[2024-07-31 02:58:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 02:58:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:58:51.881] [amf_app] [info] 
+[2024-07-31 02:58:51.942] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:58:51.942] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:58:51.942] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:58:51.943] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:58:51.943] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:58:51.944] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:01.948] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:01.948] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:01.948] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:01.949] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:01.949] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:01.949] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:11.881] [amf_app] [info] 
+[2024-07-31 02:59:11.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 02:59:11.881] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 02:59:11.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] 
+[2024-07-31 02:59:11.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 02:59:11.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:11.881] [amf_app] [info] 
+[2024-07-31 02:59:11.956] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:11.956] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:11.956] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:11.957] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:11.957] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:11.957] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:21.958] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:21.958] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:21.958] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:21.960] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:21.960] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:21.960] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:31.881] [amf_app] [info] 
+[2024-07-31 02:59:31.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 02:59:31.881] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 02:59:31.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] 
+[2024-07-31 02:59:31.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 02:59:31.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:31.881] [amf_app] [info] 
+[2024-07-31 02:59:31.960] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:31.960] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:31.960] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:31.962] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:31.962] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:31.962] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:41.963] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:41.963] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:41.963] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:41.964] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:41.964] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:41.964] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 02:59:51.881] [amf_app] [info] 
+[2024-07-31 02:59:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 02:59:51.881] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 02:59:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] 
+[2024-07-31 02:59:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 02:59:51.881] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 02:59:51.881] [amf_app] [info] 
+[2024-07-31 02:59:51.965] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 02:59:51.965] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 02:59:51.965] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 02:59:51.966] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 02:59:51.966] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 02:59:51.966] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:01.967] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:01.967] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:01.967] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:01.969] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:01.969] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:01.969] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:11.885] [amf_app] [info] 
+[2024-07-31 03:00:11.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:00:11.885] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:00:11.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] 
+[2024-07-31 03:00:11.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:00:11.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:11.885] [amf_app] [info] 
+[2024-07-31 03:00:11.969] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:11.969] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:11.969] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:11.971] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:11.971] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:11.971] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:21.971] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:21.972] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:21.972] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:21.973] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:21.973] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:21.973] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:31.885] [amf_app] [info] 
+[2024-07-31 03:00:31.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:00:31.885] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:00:31.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] 
+[2024-07-31 03:00:31.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:00:31.885] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:31.885] [amf_app] [info] 
+[2024-07-31 03:00:31.975] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:31.976] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:31.976] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:31.977] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:31.977] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:31.977] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:41.978] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:41.978] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:41.978] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:41.979] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:41.980] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:41.980] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:00:51.889] [amf_app] [info] 
+[2024-07-31 03:00:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:00:51.889] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:00:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] 
+[2024-07-31 03:00:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:00:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:00:51.889] [amf_app] [info] 
+[2024-07-31 03:00:51.980] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:00:51.980] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:00:51.980] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:00:51.982] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:00:51.982] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:00:51.982] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:01.982] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:01.982] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:01.982] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:01.983] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:01.983] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:01.983] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:11.889] [amf_app] [info] 
+[2024-07-31 03:01:11.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:01:11.889] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:01:11.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] 
+[2024-07-31 03:01:11.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:01:11.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:11.889] [amf_app] [info] 
+[2024-07-31 03:01:11.984] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:11.984] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:11.984] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:11.986] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:11.986] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:11.986] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:21.986] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:21.986] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:21.986] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:21.988] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:21.988] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:21.988] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:31.889] [amf_app] [info] 
+[2024-07-31 03:01:31.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:01:31.889] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:01:31.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] 
+[2024-07-31 03:01:31.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:01:31.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:31.889] [amf_app] [info] 
+[2024-07-31 03:01:31.988] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:31.988] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:31.988] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:31.990] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:31.990] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:31.990] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:41.995] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:41.995] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:41.995] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:41.996] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:41.996] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:41.996] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:01:51.889] [amf_app] [info] 
+[2024-07-31 03:01:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:01:51.889] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:01:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] 
+[2024-07-31 03:01:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:01:51.889] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:01:51.889] [amf_app] [info] 
+[2024-07-31 03:01:51.997] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:01:51.997] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:01:51.997] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:01:51.999] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:01:51.999] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:01:51.999] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:02.001] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:02.002] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:02.002] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:02.003] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:02.003] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:02.003] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:11.986] [amf_app] [info] 
+[2024-07-31 03:02:11.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:02:11.986] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:02:11.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] 
+[2024-07-31 03:02:11.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:02:11.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:11.986] [amf_app] [info] 
+[2024-07-31 03:02:12.007] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:12.007] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:12.007] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:12.008] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:12.008] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:12.008] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:22.009] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:22.009] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:22.009] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:22.011] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:22.011] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:22.011] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:31.986] [amf_app] [info] 
+[2024-07-31 03:02:31.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:02:31.986] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:02:31.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] 
+[2024-07-31 03:02:31.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:02:31.986] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:31.986] [amf_app] [info] 
+[2024-07-31 03:02:32.012] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:32.012] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:32.012] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:32.026] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:32.026] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:32.026] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:42.028] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:42.028] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:42.028] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:42.029] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:42.030] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:42.030] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:02:51.987] [amf_app] [info] 
+[2024-07-31 03:02:51.987] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:02:51.987] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:02:51.987] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] 
+[2024-07-31 03:02:51.987] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:02:51.987] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:02:51.987] [amf_app] [info] 
+[2024-07-31 03:02:52.034] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:02:52.034] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:02:52.034] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:02:52.035] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:02:52.035] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:02:52.035] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:02.035] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:02.035] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:02.035] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:02.037] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:02.037] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:02.037] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:11.988] [amf_app] [info] 
+[2024-07-31 03:03:11.988] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:03:11.988] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:03:11.988] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] 
+[2024-07-31 03:03:11.988] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:03:11.988] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:11.988] [amf_app] [info] 
+[2024-07-31 03:03:12.037] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:12.037] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:12.037] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:12.039] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:12.039] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:12.039] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:22.039] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:22.039] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:22.039] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:22.041] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:22.041] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:22.041] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:31.989] [amf_app] [info] 
+[2024-07-31 03:03:31.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:03:31.989] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:03:31.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] 
+[2024-07-31 03:03:31.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:03:31.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:31.989] [amf_app] [info] 
+[2024-07-31 03:03:32.041] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:32.041] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:32.041] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:32.043] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:32.043] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:32.043] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:42.043] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:42.043] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:42.043] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:42.044] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:42.044] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:42.044] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:03:51.989] [amf_app] [info] 
+[2024-07-31 03:03:51.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:03:51.989] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:03:51.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] 
+[2024-07-31 03:03:51.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:03:51.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:03:51.989] [amf_app] [info] 
+[2024-07-31 03:03:52.047] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:03:52.047] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:03:52.048] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:03:52.049] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:03:52.049] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:03:52.049] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:02.049] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:02.049] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:02.049] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:02.050] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:02.051] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:02.051] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:11.989] [amf_app] [info] 
+[2024-07-31 03:04:11.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:04:11.989] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:04:11.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] 
+[2024-07-31 03:04:11.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:04:11.989] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:11.989] [amf_app] [info] 
+[2024-07-31 03:04:12.051] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:12.051] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:12.051] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:12.052] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:12.052] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:12.052] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:22.052] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:22.052] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:22.052] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:22.053] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:22.053] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:22.053] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:31.992] [amf_app] [info] 
+[2024-07-31 03:04:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:04:31.992] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:04:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] 
+[2024-07-31 03:04:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:04:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:31.992] [amf_app] [info] 
+[2024-07-31 03:04:32.055] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:32.055] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:32.055] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:32.056] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:32.056] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:32.056] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:42.057] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:42.057] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:42.057] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:42.058] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:42.058] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:42.058] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:04:51.992] [amf_app] [info] 
+[2024-07-31 03:04:51.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:04:51.992] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:04:51.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] 
+[2024-07-31 03:04:51.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:04:51.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:04:51.992] [amf_app] [info] 
+[2024-07-31 03:04:52.058] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:04:52.058] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:04:52.058] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:04:52.060] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:04:52.060] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:04:52.060] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:02.088] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:02.089] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:02.089] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:02.103] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:02.103] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:02.103] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:11.992] [amf_app] [info] 
+[2024-07-31 03:05:11.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:05:11.992] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:05:11.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] 
+[2024-07-31 03:05:11.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:05:11.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:11.992] [amf_app] [info] 
+[2024-07-31 03:05:12.104] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:12.104] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:12.104] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:12.105] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:12.105] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:12.105] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:22.107] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:22.107] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:22.107] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:22.108] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:22.108] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:22.108] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:31.992] [amf_app] [info] 
+[2024-07-31 03:05:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:05:31.992] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:05:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] 
+[2024-07-31 03:05:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:05:31.992] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:31.992] [amf_app] [info] 
+[2024-07-31 03:05:32.108] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:32.108] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:32.108] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:32.117] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:32.117] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:32.117] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:42.149] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:42.149] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:42.149] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:42.150] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:42.150] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:42.150] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:05:51.993] [amf_app] [info] 
+[2024-07-31 03:05:51.993] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:05:51.993] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:05:51.993] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] 
+[2024-07-31 03:05:51.993] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:05:51.993] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:05:51.993] [amf_app] [info] 
+[2024-07-31 03:05:52.151] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:05:52.151] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:05:52.151] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:05:52.152] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:05:52.152] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:05:52.152] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:02.152] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:02.152] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:02.152] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:02.153] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:02.153] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:02.153] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:11.993] [amf_app] [info] 
+[2024-07-31 03:06:11.993] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:11.993] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:06:11.994] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:06:11.994] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:06:11.994] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:11.994] [amf_app] [info] 
+[2024-07-31 03:06:11.994] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:11.994] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:06:11.994] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:06:11.994] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:11.994] [amf_app] [info] 
+[2024-07-31 03:06:12.155] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:12.155] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:12.155] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:12.156] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:12.156] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:12.156] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:22.157] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:22.157] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:22.157] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:22.158] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:22.158] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:22.158] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:31.995] [amf_app] [info] 
+[2024-07-31 03:06:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:06:31.995] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:06:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] 
+[2024-07-31 03:06:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:06:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:31.995] [amf_app] [info] 
+[2024-07-31 03:06:32.159] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:32.159] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:32.159] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:32.160] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:32.160] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:32.160] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:42.160] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:42.161] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:42.161] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:42.162] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:42.162] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:42.162] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:06:51.995] [amf_app] [info] 
+[2024-07-31 03:06:51.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:06:51.995] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:06:51.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] 
+[2024-07-31 03:06:51.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:06:51.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:06:51.995] [amf_app] [info] 
+[2024-07-31 03:06:52.163] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:06:52.163] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:06:52.163] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:06:52.165] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:06:52.165] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:06:52.165] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:02.165] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:02.165] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:02.165] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:02.167] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:02.167] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:02.167] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:11.995] [amf_app] [info] 
+[2024-07-31 03:07:11.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:07:11.995] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:07:11.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] 
+[2024-07-31 03:07:11.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:07:11.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:11.995] [amf_app] [info] 
+[2024-07-31 03:07:12.167] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:12.167] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:12.167] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:12.168] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:12.169] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:12.169] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:22.169] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:22.169] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:22.169] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:22.170] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:22.170] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:22.170] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:31.995] [amf_app] [info] 
+[2024-07-31 03:07:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:07:31.995] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:07:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] 
+[2024-07-31 03:07:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:07:31.995] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:31.995] [amf_app] [info] 
+[2024-07-31 03:07:32.176] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:32.176] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:32.176] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:32.178] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:32.178] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:32.178] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:42.178] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:42.178] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:42.178] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:42.180] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:42.180] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:42.180] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:07:51.996] [amf_app] [info] 
+[2024-07-31 03:07:51.996] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:07:51.996] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:07:51.996] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] 
+[2024-07-31 03:07:51.996] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:07:51.996] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:07:51.996] [amf_app] [info] 
+[2024-07-31 03:07:52.180] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:07:52.180] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:07:52.180] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:07:52.182] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:07:52.182] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:07:52.182] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:02.183] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:02.183] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:02.183] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:02.184] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:02.184] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:02.184] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:11.997] [amf_app] [info] 
+[2024-07-31 03:08:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:08:11.997] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:08:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] 
+[2024-07-31 03:08:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:08:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:11.997] [amf_app] [info] 
+[2024-07-31 03:08:12.184] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:12.184] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:12.184] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:12.186] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:12.186] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:12.186] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:22.187] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:22.187] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:22.187] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:22.188] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:22.188] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:22.188] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:31.997] [amf_app] [info] 
+[2024-07-31 03:08:31.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:08:31.997] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:08:31.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] 
+[2024-07-31 03:08:31.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:08:31.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:31.997] [amf_app] [info] 
+[2024-07-31 03:08:32.188] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:32.188] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:32.188] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:32.190] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:32.190] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:32.190] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:42.190] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:42.190] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:42.190] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:42.192] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:42.192] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:42.192] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:08:51.997] [amf_app] [info] 
+[2024-07-31 03:08:51.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:08:51.997] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:08:51.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] 
+[2024-07-31 03:08:51.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:08:51.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:08:51.997] [amf_app] [info] 
+[2024-07-31 03:08:52.194] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:08:52.194] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:08:52.194] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:08:52.220] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:08:52.220] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:08:52.220] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:09:02.221] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:09:02.221] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:09:02.221] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:09:02.222] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:09:02.223] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:09:02.223] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:09:11.997] [amf_app] [info] 
+[2024-07-31 03:09:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:09:11.997] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:09:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] 
+[2024-07-31 03:09:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:09:11.997] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:11.997] [amf_app] [info] 
+[2024-07-31 03:09:12.223] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:09:12.223] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:09:12.223] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:09:12.225] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:09:12.225] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:09:12.225] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:09:22.225] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:09:22.225] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:09:22.225] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:09:22.226] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:09:22.226] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:09:22.226] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:09:31.997] [amf_app] [info] 
+[2024-07-31 03:09:31.998] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] |------------------------------------------------------gNBs' information---------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] |    Index    |      Status      |       Global ID       |       gNB Name       |                 PLMN               |
+[2024-07-31 03:09:31.998] [amf_app] [info] |      -      |          -       |           -           |           -          |                 -                  |
+[2024-07-31 03:09:31.998] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] 
+[2024-07-31 03:09:31.998] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] |----------------------------------------------------UEs' information------------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] | Index |      5GMM state      |      IMSI        |     GUTI      | RAN UE NGAP ID | AMF UE ID |  PLMN   |  Cell ID  |
+[2024-07-31 03:09:31.998] [amf_app] [info] |--------------------------------------------------------------------------------------------------------------------|
+[2024-07-31 03:09:31.998] [amf_app] [info] 
+[2024-07-31 03:09:32.227] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:09:32.227] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:09:32.227] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:09:32.228] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:09:32.228] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:09:32.228] [amf_sbi] [info] Get response with Json content: null
+[2024-07-31 03:09:42.229] [amf_sbi] [info] Receive Update NF Instance Request, handling ...
+[2024-07-31 03:09:42.229] [amf_sbi] [info] Send HTTP message to http://oai-nrf:80/nnrf-nfm/v1/nf-instances/3ca638cd-9d71-4d35-b91c-7ba169984385
+[2024-07-31 03:09:42.229] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+[2024-07-31 03:09:42.230] [amf_sbi] [info] Get response with HTTP code (204)
+[2024-07-31 03:09:42.230] [amf_sbi] [info] Could not get JSON content from the response
+[2024-07-31 03:09:42.230] [amf_sbi] [info] Get response with Json content: null

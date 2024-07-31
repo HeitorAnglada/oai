@@ -1,0 +1,2338 @@
+[2024-07-31 02:58:29.889] [upf_app] [start] Options parsed
+[2024-07-31 02:58:29.889] [upf_app] [debug] Parsing the configuration file, file type YAML.
+[2024-07-31 02:58:29.889] [config ] [info] Reading NF configuration from /openair-upf/etc/config.yaml
+[2024-07-31 02:58:29.895] [config ] [debug] Validating configuration of log_level
+[2024-07-31 02:58:29.895] [config ] [debug] Validating configuration of register_nf
+[2024-07-31 02:58:29.895] [config ] [debug] Validating configuration of http_version
+[2024-07-31 02:58:29.895] [config ] [debug] Validating configuration of NRF
+[2024-07-31 02:58:29.899] [config ] [debug] Validating configuration of SMF
+[2024-07-31 02:58:29.899] [config ] [debug] Validating configuration of UPF Configuration
+[2024-07-31 02:58:29.911] [config ] [debug] Validating configuration of DNN
+[2024-07-31 02:58:29.915] [config ] [warning] The IPv6 prefix / length  is not valid
+[2024-07-31 02:58:29.915] [config ] [debug] Validating configuration of database
+[2024-07-31 02:58:29.915] [upf_app] [debug] Resolving a DNS (name 127.0.0.1)
+[2024-07-31 02:58:29.915] [upf_app] [debug] Resolving DNS Try #0
+[2024-07-31 02:58:29.916] [upf_app] [debug] Resolved a DNS (name 127.0.0.1, protocol http): Ip Addr 127.0.0.1, port 80
+[2024-07-31 02:58:29.917] [config ] [info] Configured host oai-nrf is an FQDN. Resolve on NF startup
+[2024-07-31 02:58:29.917] [upf_app] [debug] Resolving a DNS (name oai-nrf)
+[2024-07-31 02:58:29.917] [upf_app] [debug] Resolving DNS Try #0
+[2024-07-31 02:58:29.920] [upf_app] [debug] Resolved a DNS (name oai-nrf, protocol http): Ip Addr 10.104.236.144, port 80
+[2024-07-31 02:58:29.920] [config ] [debug] PDN Network validation for UE Subnet:  14.1.1.0 
+[2024-07-31 02:58:29.920] [config ] [debug] IP Pool :  14.1.1.1 - 14.1.1.254
+[2024-07-31 02:58:29.921] [config ] [info] ==== OPENAIRINTERFACE upf vBranch: HEAD Abrev. Hash: 93cab8f Date: Thu Dec 14 14:16:09 2023 +0000 ====
+[2024-07-31 02:58:29.921] [config ] [info] Basic Configuration:
+[2024-07-31 02:58:29.921] [config ] [info]   - log_level..................................: debug
+[2024-07-31 02:58:29.921] [config ] [info]   - register_nf................................: Yes
+[2024-07-31 02:58:29.921] [config ] [info]   - http_version...............................: 2
+[2024-07-31 02:58:29.921] [config ] [info] UPF Configuration:
+[2024-07-31 02:58:29.921] [config ] [info]   - host.......................................: oai-upf
+[2024-07-31 02:58:29.921] [config ] [info]   - SBI
+[2024-07-31 02:58:29.921] [config ] [info]     + URL......................................: http://oai-upf:80
+[2024-07-31 02:58:29.921] [config ] [info]     + API Version..............................: v1
+[2024-07-31 02:58:29.921] [config ] [info]     + IPv4 Address ............................: 10.244.0.93
+[2024-07-31 02:58:29.921] [config ] [info]   - N3:
+[2024-07-31 02:58:29.921] [config ] [info]     + Port.....................................: 2152
+[2024-07-31 02:58:29.921] [config ] [info]     + IPv4 Address ............................: 10.244.0.93
+[2024-07-31 02:58:29.921] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:29.921] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:29.921] [config ] [info]     + Network Instance.........................: access.oai.org
+[2024-07-31 02:58:29.921] [config ] [info]   - N4:
+[2024-07-31 02:58:29.921] [config ] [info]     + Port.....................................: 8805
+[2024-07-31 02:58:29.921] [config ] [info]     + IPv4 Address ............................: 10.244.0.93
+[2024-07-31 02:58:29.921] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:29.921] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:29.921] [config ] [info]   - N6:
+[2024-07-31 02:58:29.921] [config ] [info]     + Port.....................................: 2152
+[2024-07-31 02:58:29.921] [config ] [info]     + IPv4 Address ............................: 10.244.0.93
+[2024-07-31 02:58:29.921] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:29.921] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:29.921] [config ] [info]     + Network Instance.........................: core.oai.org
+[2024-07-31 02:58:29.921] [config ] [info]   - Instance ID................................: 0
+[2024-07-31 02:58:29.921] [config ] [info]   - Remote N6 Gateway..........................: 127.0.0.1
+[2024-07-31 02:58:29.921] [config ] [info]   - Support Features:
+[2024-07-31 02:58:29.921] [config ] [info]     + Enable BPF Datapath......................: No
+[2024-07-31 02:58:29.921] [config ] [info]     + Enable SNAT..............................: Yes
+[2024-07-31 02:58:29.921] [config ] [info]   - upf_info:
+[2024-07-31 02:58:29.921] [config ] [info]     + snssai_upf_info_item:
+[2024-07-31 02:58:29.921] [config ] [info]       - snssai:
+[2024-07-31 02:58:29.921] [config ] [info]         + sst..................................: 1
+[2024-07-31 02:58:29.921] [config ] [info]         + sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:29.921] [config ] [info]       - dnns:
+[2024-07-31 02:58:29.921] [config ] [info]         + dnn..................................: ims
+[2024-07-31 02:58:29.921] [config ] [info] Peer NF Configuration:
+[2024-07-31 02:58:29.921] [config ] [info]   NRF:
+[2024-07-31 02:58:29.921] [config ] [info]     - host.....................................: oai-nrf
+[2024-07-31 02:58:29.921] [config ] [info]     - SBI
+[2024-07-31 02:58:29.922] [config ] [info]       + URL....................................: http://oai-nrf:80
+[2024-07-31 02:58:29.922] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:29.922] [config ] [info]   SMF:
+[2024-07-31 02:58:29.922] [config ] [info]     - host.....................................: oai-smf
+[2024-07-31 02:58:29.922] [config ] [info]     - SBI
+[2024-07-31 02:58:29.922] [config ] [info]       + URL....................................: http://oai-smf:80
+[2024-07-31 02:58:29.922] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:29.922] [config ] [info] DNNs:
+[2024-07-31 02:58:29.922] [config ] [info] - DNN:
+[2024-07-31 02:58:29.922] [config ] [info]     + DNN......................................: ims
+[2024-07-31 02:58:29.922] [config ] [info]     + PDU session type.........................: IPV4V6
+[2024-07-31 02:58:29.922] [config ] [info]     + IPv6 prefix..............................: 
+[2024-07-31 02:58:29.922] [config ] [info]     + IPv4 subnet..............................: 14.1.1.0/24
+[2024-07-31 02:58:29.922] [config ] [info]     + DNS Settings:
+[2024-07-31 02:58:29.922] [config ] [info]       - primary_dns_ipv4.......................: 8.8.8.8
+[2024-07-31 02:58:29.922] [config ] [info]       - secondary_dns_ipv4.....................: 1.1.1.1
+[2024-07-31 02:58:29.922] [itti   ] [start] Starting...
+[2024-07-31 02:58:29.923] [itti   ] [start] Started
+[2024-07-31 02:58:29.923] [asc_cmd] [start] Starting...
+[2024-07-31 02:58:29.923] [itti   ] [info] Starting timer_manager_task
+[2024-07-31 02:58:29.924] [asc_cmd] [start] Started
+[2024-07-31 02:58:29.924] [upf_app] [start] Starting...
+[2024-07-31 02:58:29.926] [udp    ] [debug] Creating new listen socket on address 10.244.0.93 and port 8805
+
+[2024-07-31 02:58:29.927] [udp    ] [debug] udp_server::udp_server(10.244.0.93:8805)
+[2024-07-31 02:58:29.927] [udp    ] [debug] Creating new listen socket on address 10.244.0.93 and port 0
+
+[2024-07-31 02:58:29.927] [udp    ] [debug] udp_server::udp_server(10.244.0.93:0)
+[2024-07-31 02:58:29.927] [pfcp   ] [info] pfcp_l4_stack created listening to 10.244.0.93:8805
+[2024-07-31 02:58:29.929] [upf_n4 ] [start] Starting...
+[2024-07-31 02:58:29.930] [upf_n4 ] [start] Started
+[2024-07-31 02:58:29.930] [udp    ] [debug] Creating new listen socket on address 10.244.0.93 and port 2152
+
+[2024-07-31 02:58:29.930] [udp    ] [debug] udp_server::udp_server(10.244.0.93:2152)
+[2024-07-31 02:58:29.930] [gtpv1_u] [info] gtpu_l4_stack created listening to 10.244.0.93:2152
+[2024-07-31 02:58:29.931] [upf_n3 ] [start] Starting...
+[2024-07-31 02:58:29.932] [upf_n3 ] [start] Started
+[2024-07-31 02:58:29.988] [upf_app] [start] Starting...
+[2024-07-31 02:58:29.990] [upf_app] [debug] - NF instance info
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Instance ID: 948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Instance name: OAI-UPF
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Instance type: UPF
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Instance fqdn: 
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Status: REGISTERED
+[2024-07-31 02:58:29.990] [upf_app] [debug]     HeartBeat timer: 50
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Priority: 1
+[2024-07-31 02:58:29.990] [upf_app] [debug]     Capacity: 100
+[2024-07-31 02:58:29.990] [upf_app] [debug]     SNSSAI:
+[2024-07-31 02:58:29.990] [upf_app] [debug]         SST, SD: 1, 16777215
+[2024-07-31 02:58:29.990] [upf_app] [debug]     IPv4 Addr:
+[2024-07-31 02:58:29.990] [upf_app] [debug]         10.244.0.93
+[2024-07-31 02:58:29.990] [upf_app] [debug]     UPF Info:
+[2024-07-31 02:58:29.990] [upf_app] [debug]         SNSSAI (SST 1, SD 16777215)
+[2024-07-31 02:58:29.990] [upf_app] [debug]             DNN ims
+[2024-07-31 02:58:29.990] [upf_app] [info] Send NF Instance Registration to NRF
+[2024-07-31 02:58:29.990] [upf_app] [debug] UPF profile to JSON:
+ {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["10.244.0.93"],"nfInstanceId":"948e0c24-6c52-4afd-a300-d641328a053a","nfInstanceName":"OAI-UPF","nfStatus":"REGISTERED","nfType":"UPF","priority":1,"sNssais":[{"sd":"16777215","sst":1}],"upfInfo":{"sNssaiUpfInfoList":[{"dnnUpfInfoList":[{"dnn":"ims"}],"sNssai":{"sd":"16777215","sst":1}}]}}
+[2024-07-31 02:58:29.990] [upf_app] [debug] Send NF Instance Registration to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+[2024-07-31 02:58:29.990] [upf_app] [debug] Send NF Instance Registration to NRF, msg body: 
+ {"capacity":100,"fqdn":"","heartBeatTimer":50,"ipv4Addresses":["10.244.0.93"],"nfInstanceId":"948e0c24-6c52-4afd-a300-d641328a053a","nfInstanceName":"OAI-UPF","nfStatus":"REGISTERED","nfType":"UPF","priority":1,"sNssais":[{"sd":"16777215","sst":1}],"upfInfo":{"sNssaiUpfInfoList":[{"dnnUpfInfoList":[{"dnn":"ims"}],"sNssai":{"sd":"16777215","sst":1}}]}}
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000000100)
+> PUT /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 353
+
+* We are completely uploaded and fine
+< HTTP/2 201 
+< date: Wed, 31 Jul 2024 02:58:29 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:58:29.997] [upf_app] [info] Response from NRF, HTTP Code: 201
+[2024-07-31 02:58:29.998] [upf_app] [info] Response from NRF, JSON data: 
+ {"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["10.244.0.93"],"json_data":null,"nfInstanceId":"948e0c24-6c52-4afd-a300-d641328a053a","nfInstanceName":"OAI-UPF","nfServices":[],"nfStatus":"REGISTERED","nfType":"UPF","priority":1,"sNssais":[{"sd":"16777215","sst":1}],"upfInfo":{"sNssaiUpfInfoList":[{"dnnUpfInfoList":[{"dnn":"ims"}],"sNssai":{"sd":"16777215","sst":1}}]}}
+[2024-07-31 02:58:29.998] [upf_app] [debug] - NF instance info
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance ID: 948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance name: OAI-UPF
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance type: UPF
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance fqdn: 
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Status: REGISTERED
+[2024-07-31 02:58:29.998] [upf_app] [debug]     HeartBeat timer: 10
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Priority: 1
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Capacity: 100
+[2024-07-31 02:58:29.998] [upf_app] [debug]     SNSSAI:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SST, SD: 1, 16777215
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SST, SD: 1, 0
+[2024-07-31 02:58:29.998] [upf_app] [debug]     IPv4 Addr:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         10.244.0.93
+[2024-07-31 02:58:29.998] [upf_app] [debug]         10.244.0.93
+[2024-07-31 02:58:29.998] [upf_app] [debug]     UPF Info:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SNSSAI (SST 1, SD 16777215)
+[2024-07-31 02:58:29.998] [upf_app] [debug]             DNN ims
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SNSSAI (SST 1, SD 16777215)
+[2024-07-31 02:58:29.998] [upf_app] [debug]             DNN ims
+[2024-07-31 02:58:29.998] [upf_app] [debug] Updated UPF profile
+[2024-07-31 02:58:29.998] [upf_app] [debug] - NF instance info
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance ID: 948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance name: OAI-UPF
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance type: UPF
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Instance fqdn: 
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Status: REGISTERED
+[2024-07-31 02:58:29.998] [upf_app] [debug]     HeartBeat timer: 10
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Priority: 1
+[2024-07-31 02:58:29.998] [upf_app] [debug]     Capacity: 100
+[2024-07-31 02:58:29.998] [upf_app] [debug]     SNSSAI:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SST, SD: 1, 16777215
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SST, SD: 1, 0
+[2024-07-31 02:58:29.998] [upf_app] [debug]     IPv4 Addr:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         10.244.0.93
+[2024-07-31 02:58:29.998] [upf_app] [debug]         10.244.0.93
+[2024-07-31 02:58:29.998] [upf_app] [debug]     UPF Info:
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SNSSAI (SST 1, SD 16777215)
+[2024-07-31 02:58:29.998] [upf_app] [debug]             DNN ims
+[2024-07-31 02:58:29.998] [upf_app] [debug]         SNSSAI (SST 1, SD 16777215)
+[2024-07-31 02:58:29.998] [upf_app] [debug]             DNN ims
+[2024-07-31 02:58:29.998] [upf_app] [start] Started
+[2024-07-31 02:58:29.998] [upf_app] [start] Started
+[2024-07-31 02:58:30.099] [upf_n4 ] [info] handle_receive(34 bytes)
+[2024-07-31 02:58:30.099] [upf_n4 ] [info] Handle SX ASSOCIATION SETUP REQUEST
+[2024-07-31 02:58:39.998] [upf_app] [info] TIME-OUT event timer id 1
+[2024-07-31 02:58:39.999] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:58:39.999] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:58:39.999] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:58:39.999] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:58:39.999] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200000f100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:58:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:58:40.051] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:58:40.051] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:58:40.207] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:40.207] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:58:49.999] [upf_app] [info] TIME-OUT event timer id 3
+[2024-07-31 02:58:49.999] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:58:50.039] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:58:50.039] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:58:50.049] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:58:50.049] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000012100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 02:58:50.208] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:50.208] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+< HTTP/2 204 
+[2024-07-31 02:58:50.238] [upf_app] [info] Response from NRF, HTTP Code: 204
+< date: Wed, 31 Jul 2024 02:58:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:58:50.238] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:00.039] [upf_app] [info] TIME-OUT event timer id 5
+[2024-07-31 02:59:00.039] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:00.039] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:00.039] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:00.039] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:00.039] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000015100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+[2024-07-31 02:59:00.041] [upf_app] [info] Response from NRF, HTTP Code: 204
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:00.041] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:00.209] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:00.209] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:10.040] [upf_app] [info] TIME-OUT event timer id 7
+[2024-07-31 02:59:10.040] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:10.040] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:10.040] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:10.040] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:10.040] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000018100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:10.042] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:10.042] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:10.210] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:10.210] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:20.040] [upf_app] [info] TIME-OUT event timer id 9
+[2024-07-31 02:59:20.040] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:20.040] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:20.040] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:20.040] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:20.040] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200001b100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+[2024-07-31 02:59:20.042] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:20.042] [upf_app] [info] Got successful response from NRF
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:20.211] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:20.211] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:30.040] [upf_app] [info] TIME-OUT event timer id 11
+[2024-07-31 02:59:30.041] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:30.041] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:30.041] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:30.041] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:30.041] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200001f900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:30.043] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:30.044] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:30.211] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:30.211] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:40.046] [upf_app] [info] TIME-OUT event timer id 13
+[2024-07-31 02:59:40.046] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:40.046] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:40.046] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:40.046] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:40.046] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000022900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:40.048] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:40.048] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:40.213] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:40.213] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:50.046] [upf_app] [info] TIME-OUT event timer id 15
+[2024-07-31 02:59:50.046] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 02:59:50.046] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 02:59:50.046] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:50.046] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 02:59:50.046] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000025900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 02:59:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 02:59:50.053] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:50.053] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:50.213] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:50.213] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:00.046] [upf_app] [info] TIME-OUT event timer id 17
+[2024-07-31 03:00:00.046] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:00.046] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:00.047] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:00.047] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:00.047] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000028900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:00.050] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:00.050] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:00.214] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:00.214] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:10.047] [upf_app] [info] TIME-OUT event timer id 19
+[2024-07-31 03:00:10.047] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:10.047] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:10.047] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:10.047] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:10.047] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200002b900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+[2024-07-31 03:00:10.050] [upf_app] [info] Response from NRF, HTTP Code: 204
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:10.050] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:10.214] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:10.214] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:20.048] [upf_app] [info] TIME-OUT event timer id 21
+[2024-07-31 03:00:20.049] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:20.049] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:20.049] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:20.049] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:20.049] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000030100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:20.052] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:20.052] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:20.215] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:20.215] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:30.049] [upf_app] [info] TIME-OUT event timer id 23
+[2024-07-31 03:00:30.049] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:30.049] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:30.049] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:30.050] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:30.050] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000033100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:30.052] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:30.052] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:30.216] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:30.216] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:40.049] [upf_app] [info] TIME-OUT event timer id 25
+[2024-07-31 03:00:40.050] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:40.050] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:40.050] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:40.050] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:40.050] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000036100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:40.051] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:40.051] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:40.217] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:40.217] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:50.050] [upf_app] [info] TIME-OUT event timer id 27
+[2024-07-31 03:00:50.050] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:00:50.050] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:00:50.050] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:50.050] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:00:50.050] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000039100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:00:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:00:50.053] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:50.053] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:50.218] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:50.218] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:00.052] [upf_app] [info] TIME-OUT event timer id 29
+[2024-07-31 03:01:00.052] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:00.052] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:00.052] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:00.052] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:00.052] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200003c100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:01:00.054] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:00.054] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:00.218] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:00.219] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:10.053] [upf_app] [info] TIME-OUT event timer id 31
+[2024-07-31 03:01:10.053] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:10.053] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:10.053] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:10.053] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:10.053] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200003f100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:01:10.055] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:10.055] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:10.219] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:10.219] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:20.054] [upf_app] [info] TIME-OUT event timer id 33
+[2024-07-31 03:01:20.054] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:20.054] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:20.054] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:20.054] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:20.054] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000042100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:20.056] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:20.056] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:20.220] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:20.220] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:30.054] [upf_app] [info] TIME-OUT event timer id 35
+[2024-07-31 03:01:30.054] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:30.054] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:30.054] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:30.054] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:30.054] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000045100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:30.057] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:30.057] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:30.226] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:30.226] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:40.055] [upf_app] [info] TIME-OUT event timer id 37
+[2024-07-31 03:01:40.055] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:40.055] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:40.055] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:40.055] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:40.055] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000048100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:40.058] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:40.058] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:40.227] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:40.227] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:50.055] [upf_app] [info] TIME-OUT event timer id 39
+[2024-07-31 03:01:50.055] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:01:50.055] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:01:50.055] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:50.055] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:01:50.055] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200004b100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:01:50.057] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:50.057] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:01:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:01:50.228] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:50.228] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:00.055] [upf_app] [info] TIME-OUT event timer id 41
+[2024-07-31 03:02:00.055] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:02:00.056] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:02:00.056] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:00.056] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:00.056] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200004f900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:02:00.058] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:00.058] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:00.229] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:00.229] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000052900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+[2024-07-31 03:02:10.056] [upf_app] [info] TIME-OUT event timer id 43
+[2024-07-31 03:02:10.056] [upf_app] [debug] Send Heartbeat to NRF
+Host: oai-nrf
+accept: */*
+content-type: application/json
+[2024-07-31 03:02:10.056] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+content-length: 58
+[2024-07-31 03:02:10.056] [upf_app] [info] Send NF Update to NRF
+
+[2024-07-31 03:02:10.056] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:10.056] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:10.062] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:10.062] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:10.230] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:10.230] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:20.056] [upf_app] [info] TIME-OUT event timer id 45
+[2024-07-31 03:02:20.056] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:02:20.057] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:02:20.057] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:20.057] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:20.057] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000055900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:20.062] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:20.062] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:20.232] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:20.232] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:30.057] [upf_app] [info] TIME-OUT event timer id 47
+[2024-07-31 03:02:30.057] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:02:30.057] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:02:30.057] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:30.057] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:30.057] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000058900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:30.060] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:30.060] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:30.233] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:30.233] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:40.057] [upf_app] [info] TIME-OUT event timer id 49
+[2024-07-31 03:02:40.058] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:02:40.058] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:02:40.058] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:40.058] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:40.058] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200005b900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:40.062] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:40.062] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:40.234] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:40.234] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:50.058] [upf_app] [info] TIME-OUT event timer id 51
+[2024-07-31 03:02:50.058] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:02:50.058] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:02:50.058] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:50.058] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:02:50.058] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000060100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:02:50.060] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:02:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:02:50.060] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:50.237] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:50.237] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:00.058] [upf_app] [info] TIME-OUT event timer id 53
+[2024-07-31 03:03:00.058] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:00.058] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:00.058] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:00.058] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:00.058] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000063100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:03:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:00.061] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:00.061] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:00.239] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:00.239] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:10.061] [upf_app] [info] TIME-OUT event timer id 55
+[2024-07-31 03:03:10.061] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:10.061] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:10.061] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:10.061] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:10.061] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000066100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:03:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:10.065] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:10.065] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:10.240] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:10.240] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:20.061] [upf_app] [info] TIME-OUT event timer id 57
+[2024-07-31 03:03:20.061] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:20.061] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:20.061] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:20.061] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:20.061] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000069100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:03:20.063] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:03:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:20.063] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:20.241] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:20.241] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:30.061] [upf_app] [info] TIME-OUT event timer id 59
+[2024-07-31 03:03:30.061] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:30.061] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:30.061] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:30.061] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:30.061] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200006c100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:03:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:30.064] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:30.064] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:30.246] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:30.246] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:40.062] [upf_app] [info] TIME-OUT event timer id 61
+[2024-07-31 03:03:40.062] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:40.062] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:40.062] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:40.062] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:40.062] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200006f100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:03:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:40.065] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:40.065] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:40.246] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:40.246] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:50.089] [upf_app] [info] TIME-OUT event timer id 63
+[2024-07-31 03:03:50.089] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:03:50.089] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:03:50.089] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:50.089] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:03:50.089] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000072100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+[2024-07-31 03:03:50.094] [upf_app] [info] Response from NRF, HTTP Code: 204
+< date: Wed, 31 Jul 2024 03:03:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:03:50.094] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:50.247] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:50.247] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:00.090] [upf_app] [info] TIME-OUT event timer id 65
+[2024-07-31 03:04:00.090] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:00.090] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:00.090] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:00.090] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:00.090] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000075100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:00.092] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:00.092] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:00.265] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:00.265] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:10.092] [upf_app] [info] TIME-OUT event timer id 67
+[2024-07-31 03:04:10.092] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:10.092] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:10.092] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:10.092] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:10.092] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000078100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:04:10.094] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:10.094] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:10.265] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:10.265] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:20.092] [upf_app] [info] TIME-OUT event timer id 69
+[2024-07-31 03:04:20.092] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:20.092] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:20.092] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:20.092] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:20.092] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200007b100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+[2024-07-31 03:04:20.130] [upf_app] [info] Response from NRF, HTTP Code: 204
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:20.130] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:20.266] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:20.266] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:30.092] [upf_app] [info] TIME-OUT event timer id 71
+[2024-07-31 03:04:30.093] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:30.093] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:30.093] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:30.093] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:30.093] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200007f900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:30.094] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:30.094] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:30.266] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:30.266] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:40.096] [upf_app] [info] TIME-OUT event timer id 73
+[2024-07-31 03:04:40.096] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:40.096] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:40.096] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:40.096] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:40.096] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000082900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+[2024-07-31 03:04:40.098] [upf_app] [info] Response from NRF, HTTP Code: 204
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:40.098] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:40.267] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:40.267] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:50.096] [upf_app] [info] TIME-OUT event timer id 75
+[2024-07-31 03:04:50.096] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:04:50.096] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:04:50.096] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:50.096] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:04:50.096] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000085900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:04:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:04:50.139] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:50.139] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:50.268] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:50.268] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:00.096] [upf_app] [info] TIME-OUT event timer id 77
+[2024-07-31 03:05:00.096] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:00.096] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:00.096] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:00.097] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:00.097] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000088900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 03:05:00.098] [upf_app] [info] Response from NRF, HTTP Code: 204
+< 
+[2024-07-31 03:05:00.098] [upf_app] [info] Got successful response from NRF
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:00.268] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:00.268] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:10.096] [upf_app] [info] TIME-OUT event timer id 79
+[2024-07-31 03:05:10.096] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:10.096] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:10.097] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:10.097] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:10.097] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200008b900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:10.099] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:10.100] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:10.269] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:10.269] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:20.098] [upf_app] [info] TIME-OUT event timer id 81
+[2024-07-31 03:05:20.098] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:20.098] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:20.098] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:20.098] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:20.098] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000090100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:05:20.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:20.122] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:20.270] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:20.270] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:30.099] [upf_app] [info] TIME-OUT event timer id 83
+[2024-07-31 03:05:30.099] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:30.099] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:30.099] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:30.099] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:30.099] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000093100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:30.103] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:30.103] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:30.270] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:30.270] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:40.099] [upf_app] [info] TIME-OUT event timer id 85
+[2024-07-31 03:05:40.099] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:40.099] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:40.099] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:40.099] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:40.099] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000096100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 03:05:40.101] [upf_app] [info] Response from NRF, HTTP Code: 204
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:40.101] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:40.271] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:40.271] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:50.099] [upf_app] [info] TIME-OUT event timer id 87
+[2024-07-31 03:05:50.099] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:05:50.099] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:05:50.099] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:50.099] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:05:50.099] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x622000099100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:05:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:05:50.119] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:50.119] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:50.272] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:50.272] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:00.100] [upf_app] [info] TIME-OUT event timer id 89
+[2024-07-31 03:06:00.101] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:00.101] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:00.101] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:00.101] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:00.101] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200009c100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:00.103] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:00.103] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:00.273] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:00.273] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:10.101] [upf_app] [info] TIME-OUT event timer id 91
+[2024-07-31 03:06:10.101] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:10.101] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:10.101] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:10.101] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:10.101] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200009f100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:06:10.103] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:10.103] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:10.273] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:10.273] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:20.101] [upf_app] [info] TIME-OUT event timer id 93
+[2024-07-31 03:06:20.101] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:20.101] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:20.101] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:20.101] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:20.101] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000a2100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:06:20.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:20.122] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:20.274] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:20.274] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:30.102] [upf_app] [info] TIME-OUT event timer id 95
+[2024-07-31 03:06:30.102] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:30.102] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:30.102] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:30.102] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:30.102] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000a5100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 03:06:30.104] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:30.104] [upf_app] [info] Got successful response from NRF
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:30.275] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:30.275] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:40.103] [upf_app] [info] TIME-OUT event timer id 97
+[2024-07-31 03:06:40.103] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:40.103] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:40.103] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:40.103] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:40.103] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000a8100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:06:40.105] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:40.105] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:40.276] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:40.276] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:50.104] [upf_app] [info] TIME-OUT event timer id 99
+[2024-07-31 03:06:50.104] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:06:50.104] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:06:50.104] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:50.104] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:06:50.104] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000ab100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:06:50.118] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:50.118] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:06:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:06:50.281] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:50.281] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:00.104] [upf_app] [info] TIME-OUT event timer id 101
+[2024-07-31 03:07:00.104] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:00.104] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:00.104] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:00.104] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:00.104] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000af900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:00.106] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:00.106] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:00.281] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:00.282] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:10.104] [upf_app] [info] TIME-OUT event timer id 103
+[2024-07-31 03:07:10.104] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:10.104] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:10.104] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:10.104] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:10.104] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000b2900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:10.106] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:10.106] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:10.282] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:10.282] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:20.105] [upf_app] [info] TIME-OUT event timer id 105
+[2024-07-31 03:07:20.105] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:20.105] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:20.105] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:20.105] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:20.105] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000b5900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:20.142] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:20.142] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:20.283] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:20.283] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:30.105] [upf_app] [info] TIME-OUT event timer id 107
+[2024-07-31 03:07:30.105] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:30.105] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:30.105] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:30.105] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:30.106] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000b8900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:30.109] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:30.109] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:30.284] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:30.284] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:40.106] [upf_app] [info] TIME-OUT event timer id 109
+[2024-07-31 03:07:40.106] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:40.106] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:40.106] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:40.106] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:40.106] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000bb900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+[2024-07-31 03:07:40.108] [upf_app] [info] Response from NRF, HTTP Code: 204
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:40.108] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:40.285] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:40.285] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:50.106] [upf_app] [info] TIME-OUT event timer id 111
+[2024-07-31 03:07:50.106] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:07:50.106] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:07:50.106] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:50.106] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:07:50.106] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000c0100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:07:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:07:50.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:50.122] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:50.286] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:50.286] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:00.106] [upf_app] [info] TIME-OUT event timer id 113
+[2024-07-31 03:08:00.106] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:00.106] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:00.106] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:00.106] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:00.106] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000c3100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:00 GMT
+< content-type: application/json
+[2024-07-31 03:08:00.108] [upf_app] [info] Response from NRF, HTTP Code: 204
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:00.108] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:00.286] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:00.286] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:10.107] [upf_app] [info] TIME-OUT event timer id 115
+[2024-07-31 03:08:10.107] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:10.107] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:10.107] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:10.107] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:10.107] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000c6100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:10.109] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:10.109] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:10.287] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:10.287] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:20.108] [upf_app] [info] TIME-OUT event timer id 117
+[2024-07-31 03:08:20.108] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:20.108] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:20.108] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:20.108] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:20.108] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000c9100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:20.110] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:20.110] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:20.288] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:20.288] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:30.108] [upf_app] [info] TIME-OUT event timer id 119
+[2024-07-31 03:08:30.108] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:30.108] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:30.108] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:30.108] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:30.108] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000cc100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:08:30.111] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:30.111] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:30.288] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:30.289] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:40.109] [upf_app] [info] TIME-OUT event timer id 121
+[2024-07-31 03:08:40.109] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:40.109] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:40.109] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:40.109] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:40.109] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000cf100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:40.110] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:40.111] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:40.289] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:40.289] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:50.109] [upf_app] [info] TIME-OUT event timer id 123
+[2024-07-31 03:08:50.109] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:08:50.109] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:08:50.109] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:50.109] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:08:50.109] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000d2100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:08:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:08:50.118] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:50.118] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:50.290] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:50.290] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:00.110] [upf_app] [info] TIME-OUT event timer id 125
+[2024-07-31 03:09:00.110] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:00.110] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:00.110] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:00.110] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:00.110] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000d5100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:09:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:00.111] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:00.111] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:00.291] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:00.291] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:10.110] [upf_app] [info] TIME-OUT event timer id 127
+[2024-07-31 03:09:10.110] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:10.110] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:10.110] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:10.110] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:10.110] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000d8100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:09:10.113] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:10.113] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:09:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:10.292] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:10.292] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:20.110] [upf_app] [info] TIME-OUT event timer id 129
+[2024-07-31 03:09:20.110] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:20.110] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:20.110] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:20.110] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:20.111] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000db100)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:09:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:20.118] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:20.118] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:20.293] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:20.293] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:30.111] [upf_app] [info] TIME-OUT event timer id 131
+[2024-07-31 03:09:30.111] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:30.111] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:30.111] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:30.111] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:30.111] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000df900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:09:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:30.113] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:30.113] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:30.293] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:30.294] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:40.145] [upf_app] [info] TIME-OUT event timer id 133
+[2024-07-31 03:09:40.145] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:40.145] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:40.145] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:40.145] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:40.145] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000e2900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:09:40.147] [upf_app] [info] Response from NRF, HTTP Code: 204
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:09:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:40.148] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:40.295] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:40.295] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:50.145] [upf_app] [info] TIME-OUT event timer id 135
+[2024-07-31 03:09:50.145] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:09:50.145] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:09:50.145] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:50.145] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:09:50.145] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000e5900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+[2024-07-31 03:09:50.148] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:50.148] [upf_app] [info] Got successful response from NRF
+< date: Wed, 31 Jul 2024 03:09:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:09:50.295] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:50.295] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:00.147] [upf_app] [info] TIME-OUT event timer id 137
+[2024-07-31 03:10:00.147] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:00.147] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:00.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:00.147] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:00.147] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000e8900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:00 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:00.149] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:00.150] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:00.296] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:00.296] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:10.147] [upf_app] [info] TIME-OUT event timer id 139
+[2024-07-31 03:10:10.147] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:10.147] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:10.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:10.147] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:10.147] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000eb900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:10 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:10.149] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:10.149] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:10.297] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:10.297] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:20.147] [upf_app] [info] TIME-OUT event timer id 141
+[2024-07-31 03:10:20.147] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:20.147] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:20.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:20.147] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:20.147] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000ee900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:20 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:20.150] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:20.150] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:20.297] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:20.297] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:30.149] [upf_app] [info] TIME-OUT event timer id 143
+[2024-07-31 03:10:30.149] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:30.149] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:30.149] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:30.149] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:30.149] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x6220000be900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:30 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:30.151] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:30.151] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:30.298] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:30.298] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:40.149] [upf_app] [info] TIME-OUT event timer id 145
+[2024-07-31 03:10:40.149] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:40.149] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:40.149] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:40.149] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:40.149] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200008e900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+[2024-07-31 03:10:40.151] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:40.151] [upf_app] [info] Got successful response from NRF
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:40 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:40.298] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:40.298] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:50.149] [upf_app] [info] TIME-OUT event timer id 147
+[2024-07-31 03:10:50.149] [upf_app] [debug] Send Heartbeat to NRF
+[2024-07-31 03:10:50.149] [upf_app] [debug] Set a timer to the next Heart-beat (10)
+[2024-07-31 03:10:50.149] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:50.149] [upf_app] [debug] Send NF Update to NRF (Msg body [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}])
+[2024-07-31 03:10:50.149] [upf_app] [debug] Send NF Update to NRF (NRF URL http://oai-nrf:80/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a)
+*   Trying 10.104.236.144:80...
+* Connected to oai-nrf (10.104.236.144) port 80 (#0)
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x62200005e900)
+> PATCH /nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a HTTP/2
+Host: oai-nrf
+accept: */*
+content-type: application/json
+content-length: 58
+
+* We are completely uploaded and fine
+< HTTP/2 204 
+< date: Wed, 31 Jul 2024 03:10:50 GMT
+< content-type: application/json
+< location: 10.244.0.90/nnrf-nfm/v1/nf-instances/948e0c24-6c52-4afd-a300-d641328a053a
+< 
+* Connection #0 to host oai-nrf left intact
+[2024-07-31 03:10:50.152] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:50.152] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:50.299] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:50.299] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST

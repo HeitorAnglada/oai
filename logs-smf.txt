@@ -1,0 +1,795 @@
+[2024-07-31 02:58:28.851] [smf_app] [start] Options parsed
+[2024-07-31 02:58:28.851] [config ] [info] Reading NF configuration from /openair-smf/etc/config.yaml
+[2024-07-31 02:58:28.858] [config ] [debug] Unknown NF upf in configuration. Ignored
+[2024-07-31 02:58:28.858] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-07-31 02:58:28.858] [config ] [debug] Unknown NF ausf in configuration. Ignored
+[2024-07-31 02:58:28.858] [config ] [debug] Unknown NF nssf in configuration. Ignored
+[2024-07-31 02:58:28.858] [config ] [debug] Validating configuration of log_level
+[2024-07-31 02:58:28.861] [config ] [warning] The IPv6 prefix / length  is not valid
+[2024-07-31 02:58:28.861] [config ] [info] ==== OPENAIRINTERFACE smf vBranch: HEAD Abrev. Hash: ffd50b6d Date: Tue Jan 23 15:28:21 2024 +0100 ====
+[2024-07-31 02:58:28.861] [config ] [info] Basic Configuration:
+[2024-07-31 02:58:28.861] [config ] [info]   - log_level..................................: info
+[2024-07-31 02:58:28.861] [config ] [info]   - register_nf................................: Yes
+[2024-07-31 02:58:28.861] [config ] [info]   - http_version...............................: 2
+[2024-07-31 02:58:28.861] [config ] [info]   - Curl Timeout...............................: 3000 (ms)
+[2024-07-31 02:58:28.861] [config ] [info] SMF Config:
+[2024-07-31 02:58:28.861] [config ] [info]   - host.......................................: oai-smf
+[2024-07-31 02:58:28.861] [config ] [info]   - sbi
+[2024-07-31 02:58:28.861] [config ] [info]     + URL......................................: http://oai-smf:80
+[2024-07-31 02:58:28.861] [config ] [info]     + API Version..............................: v1
+[2024-07-31 02:58:28.861] [config ] [info]     + IPv4 Address ............................: 10.244.0.91
+[2024-07-31 02:58:28.861] [config ] [info]   - n4
+[2024-07-31 02:58:28.861] [config ] [info]     + Port.....................................: 8805
+[2024-07-31 02:58:28.861] [config ] [info]     + IPv4 Address ............................: 10.244.0.91
+[2024-07-31 02:58:28.861] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:28.861] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:28.861] [config ] [info]   supported_features:
+[2024-07-31 02:58:28.861] [config ] [info]     + use_local_subscription_info..............: Yes
+[2024-07-31 02:58:28.861] [config ] [info]     + use_local_pcc_rules......................: Yes
+[2024-07-31 02:58:28.861] [config ] [info]     + use_external_ausf........................: No
+[2024-07-31 02:58:28.861] [config ] [info]     + use_external_udm.........................: No
+[2024-07-31 02:58:28.861] [config ] [info]     + use_external_nssf........................: No
+[2024-07-31 02:58:28.861] [config ] [info]   - ue_mtu.....................................: 1500
+[2024-07-31 02:58:28.861] [config ] [info]   - p-cscf_ipv4................................: 192.168.70.139
+[2024-07-31 02:58:28.861] [config ] [info]   - p-cscf_ipv6................................: fe80::7915:f408:1787:db8b
+[2024-07-31 02:58:28.861] [config ] [info]   UPF List:
+[2024-07-31 02:58:28.861] [config ] [info]     + oai-upf
+[2024-07-31 02:58:28.861] [config ] [info]       + host...................................: oai-upf
+[2024-07-31 02:58:28.861] [config ] [info]       + port...................................: 8805
+[2024-07-31 02:58:28.861] [config ] [info]       + enable_usage_reporting.................: No
+[2024-07-31 02:58:28.861] [config ] [info]       + enable_dl_pdr_in_session_establishment.: No
+[2024-07-31 02:58:28.861] [config ] [info]   Local Subscription Infos:
+[2024-07-31 02:58:28.861] [config ] [info]     - local_subscription_info
+[2024-07-31 02:58:28.861] [config ] [info]       + dnn....................................: oai
+[2024-07-31 02:58:28.861] [config ] [info]       + ssc_mode...............................: 1
+[2024-07-31 02:58:28.861] [config ] [info]       + snssai:
+[2024-07-31 02:58:28.861] [config ] [info]         - sst..................................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:28.861] [config ] [info]       + qos_profile:
+[2024-07-31 02:58:28.861] [config ] [info]         - 5qi..................................: 5
+[2024-07-31 02:58:28.861] [config ] [info]         - priority.............................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_priority.........................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_preempt_vulnerability............: NOT_PREEMPTABLE
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_preempt_capability...............: NOT_PREEMPT
+[2024-07-31 02:58:28.861] [config ] [info]         - session_ambr_dl......................: 400Mbps
+[2024-07-31 02:58:28.861] [config ] [info]         - session_ambr_ul......................: 200Mbps
+[2024-07-31 02:58:28.861] [config ] [info]     - local_subscription_info
+[2024-07-31 02:58:28.861] [config ] [info]       + dnn....................................: ims
+[2024-07-31 02:58:28.861] [config ] [info]       + ssc_mode...............................: 1
+[2024-07-31 02:58:28.861] [config ] [info]       + snssai:
+[2024-07-31 02:58:28.861] [config ] [info]         - sst..................................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:28.861] [config ] [info]       + qos_profile:
+[2024-07-31 02:58:28.861] [config ] [info]         - 5qi..................................: 2
+[2024-07-31 02:58:28.861] [config ] [info]         - priority.............................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_priority.........................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_preempt_vulnerability............: NOT_PREEMPTABLE
+[2024-07-31 02:58:28.861] [config ] [info]         - arp_preempt_capability...............: NOT_PREEMPT
+[2024-07-31 02:58:28.861] [config ] [info]         - session_ambr_dl......................: 200Mbps
+[2024-07-31 02:58:28.861] [config ] [info]         - session_ambr_ul......................: 100Mbps
+[2024-07-31 02:58:28.861] [config ] [info]   + smf_info:
+[2024-07-31 02:58:28.861] [config ] [info]     - snssai_smf_info_item:
+[2024-07-31 02:58:28.861] [config ] [info]       + snssai:
+[2024-07-31 02:58:28.861] [config ] [info]         - sst..................................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:28.861] [config ] [info]       + dnns:
+[2024-07-31 02:58:28.861] [config ] [info]         - dnn..................................: oai
+[2024-07-31 02:58:28.861] [config ] [info]     - snssai_smf_info_item:
+[2024-07-31 02:58:28.861] [config ] [info]       + snssai:
+[2024-07-31 02:58:28.861] [config ] [info]         - sst..................................: 1
+[2024-07-31 02:58:28.861] [config ] [info]         - sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:28.861] [config ] [info]       + dnns:
+[2024-07-31 02:58:28.861] [config ] [info]         - dnn..................................: ims
+[2024-07-31 02:58:28.861] [config ] [info] Peer NF Configuration:
+[2024-07-31 02:58:28.861] [config ] [info]   nrf:
+[2024-07-31 02:58:28.861] [config ] [info]     - host.....................................: oai-nrf
+[2024-07-31 02:58:28.861] [config ] [info]     - sbi
+[2024-07-31 02:58:28.861] [config ] [info]       + URL....................................: http://oai-nrf:80
+[2024-07-31 02:58:28.861] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:28.861] [config ] [info] DNNs:
+[2024-07-31 02:58:28.861] [config ] [info] - DNN:
+[2024-07-31 02:58:28.861] [config ] [info]     + DNN......................................: oai
+[2024-07-31 02:58:28.861] [config ] [info]     + PDU session type.........................: IPV4
+[2024-07-31 02:58:28.861] [config ] [info]     + IPv4 subnet..............................: 12.1.1.0/24
+[2024-07-31 02:58:28.861] [config ] [info]     + DNS Settings:
+[2024-07-31 02:58:28.861] [config ] [info]       - primary_dns_ipv4.......................: 10.3.2.200
+[2024-07-31 02:58:28.861] [config ] [info]       - primary_dns_ipv6.......................: 2001:4860:4860::8888
+[2024-07-31 02:58:28.861] [config ] [info]       - secondary_dns_ipv4.....................: 8.8.8.8
+[2024-07-31 02:58:28.861] [config ] [info]       - secondary_dns_ipv6.....................: 2001:4860:4860::8888
+[2024-07-31 02:58:28.861] [config ] [info] - DNN:
+[2024-07-31 02:58:28.861] [config ] [info]     + DNN......................................: ims
+[2024-07-31 02:58:28.861] [config ] [info]     + PDU session type.........................: IPV4V6
+[2024-07-31 02:58:28.861] [config ] [info]     + IPv6 prefix..............................: 
+[2024-07-31 02:58:28.861] [config ] [info]     + IPv4 subnet..............................: 14.1.1.0/24
+[2024-07-31 02:58:28.861] [config ] [info]     + DNS Settings:
+[2024-07-31 02:58:28.861] [config ] [info]       - primary_dns_ipv4.......................: 10.3.2.200
+[2024-07-31 02:58:28.861] [config ] [info]       - primary_dns_ipv6.......................: 2001:4860:4860::8888
+[2024-07-31 02:58:28.861] [config ] [info]       - secondary_dns_ipv4.....................: 8.8.8.8
+[2024-07-31 02:58:28.861] [config ] [info]       - secondary_dns_ipv6.....................: 2001:4860:4860::8888
+[2024-07-31 02:58:28.861] [itti   ] [start] Starting...
+[2024-07-31 02:58:28.861] [itti   ] [start] Started
+[2024-07-31 02:58:28.861] [async  ] [start] Starting...
+[2024-07-31 02:58:28.862] [itti   ] [info] Starting timer_manager_task
+[2024-07-31 02:58:28.862] [itti   ] [warning] Could not set schedparam to ITTI task 0, err=1
+[2024-07-31 02:58:28.862] [async  ] [warning] Could not set schedparam to ITTI task 1, err=1
+[2024-07-31 02:58:28.863] [async  ] [start] Started
+[2024-07-31 02:58:28.863] [smf_app] [start] Starting...
+[2024-07-31 02:58:28.863] [smf_app] [info] Apply config...
+[2024-07-31 02:58:28.863] [smf_app] [info] Applied config ims
+[2024-07-31 02:58:28.863] [smf_app] [info] PAA Ipv4: 14.1.1.2
+[2024-07-31 02:58:28.863] [smf_app] [info] Applied config for IPv6 ims
+[2024-07-31 02:58:28.863] [smf_app] [info] Applied config oai
+[2024-07-31 02:58:28.863] [smf_app] [info] PAA Ipv4: 12.1.1.2
+[2024-07-31 02:58:28.863] [smf_app] [info] Applied config
+[2024-07-31 02:58:28.864] [pfcp   ] [info] pfcp_l4_stack created listening to 10.244.0.91:8805
+[2024-07-31 02:58:28.864] [smf_n4 ] [start] Starting...
+[2024-07-31 02:58:28.864] [udp    ] [warning] Could not set schedparam to ITTI task 6, err=1
+[2024-07-31 02:58:28.864] [udp    ] [warning] Could not set schedparam to ITTI task 6, err=1
+[2024-07-31 02:58:28.867] [smf_n4 ] [start] Started
+[2024-07-31 02:58:28.867] [smf_sbi] [start] Starting...
+[2024-07-31 02:58:28.868] [smf_sbi] [start] Started
+[2024-07-31 02:58:28.868] [smf_app] [start] Started
+[2024-07-31 02:58:28.868] [smf_api] [info] HTTP2 server started
+[2024-07-31 02:58:29.995] [smf_api] [info] NFStatusNotifyApiImpl, received a NF status notification...
+[2024-07-31 02:58:29.995] [smf_app] [info] Handle a NF status notification from NRF (HTTP version 2)
+[2024-07-31 02:58:30.099] [smf_api] [info] NFStatusNotifyApiImpl, received a NF status notification...
+[2024-07-31 02:58:30.099] [smf_app] [info] Handle a NF status notification from NRF (HTTP version 2)
+[2024-07-31 02:58:30.099] [smf_n4 ] [info] handle_receive(53 bytes)
+[2024-07-31 02:58:30.099] [smf_n4 ] [info] Received N4 ASSOCIATION SETUP RESPONSE from an UPF
+[2024-07-31 02:58:30.099] [smf_n4 ] [info] Received N4 ASSOCIATION SETUP RESPONSE
+[2024-07-31 02:58:30.206] [smf_app] [info] UPF Interface list is empty: Assume that the UPF has a N3 and a N6 interface.
+[2024-07-31 02:58:30.206] [smf_app] [info] UPF Interface list is empty: Assume that the UPF has a N3 and a N6 interface.
+[2024-07-31 02:58:32.100] [smf_n4 ] [info] handle_receive(53 bytes)
+[2024-07-31 02:58:32.100] [smf_n4 ] [info] Received N4 ASSOCIATION SETUP RESPONSE from an UPF
+[2024-07-31 02:58:32.100] [smf_n4 ] [info] Received N4 ASSOCIATION SETUP RESPONSE
+[2024-07-31 02:58:32.100] [smf_app] [info] UPF Interface list is empty: Assume that the UPF has a N3 and a N6 interface.
+[2024-07-31 02:58:32.100] [smf_app] [info] UPF Interface list is empty: Assume that the UPF has a N3 and a N6 interface.
+[2024-07-31 02:58:35.099] [smf_n4 ] [info] TIME-OUT event timer id 3
+[2024-07-31 02:58:37.099] [smf_n4 ] [info] TIME-OUT event timer id 6
+[2024-07-31 02:58:39.902] [smf_app] [info] TIME-OUT event timer id 1
+[2024-07-31 02:58:40.207] [smf_n4 ] [info] TIME-OUT event timer id 4
+[2024-07-31 02:58:40.207] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:58:40.207] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:42.100] [smf_n4 ] [info] TIME-OUT event timer id 7
+[2024-07-31 02:58:42.101] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:58:42.267] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:45.207] [smf_n4 ] [info] TIME-OUT event timer id 11
+[2024-07-31 02:58:47.101] [smf_n4 ] [info] TIME-OUT event timer id 15
+[2024-07-31 02:58:49.902] [smf_app] [info] TIME-OUT event timer id 8
+[2024-07-31 02:58:50.207] [smf_n4 ] [info] TIME-OUT event timer id 12
+[2024-07-31 02:58:50.207] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:58:50.208] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:52.268] [smf_n4 ] [info] TIME-OUT event timer id 16
+[2024-07-31 02:58:52.268] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:58:52.268] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:55.209] [smf_n4 ] [info] TIME-OUT event timer id 20
+[2024-07-31 02:58:57.268] [smf_n4 ] [info] TIME-OUT event timer id 24
+[2024-07-31 02:58:59.904] [smf_app] [info] TIME-OUT event timer id 17
+[2024-07-31 02:59:00.208] [smf_n4 ] [info] TIME-OUT event timer id 21
+[2024-07-31 02:59:00.208] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:00.209] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:02.268] [smf_n4 ] [info] TIME-OUT event timer id 25
+[2024-07-31 02:59:02.268] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:02.269] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:05.209] [smf_n4 ] [info] TIME-OUT event timer id 29
+[2024-07-31 02:59:07.269] [smf_n4 ] [info] TIME-OUT event timer id 33
+[2024-07-31 02:59:09.904] [smf_app] [info] TIME-OUT event timer id 26
+[2024-07-31 02:59:10.210] [smf_n4 ] [info] TIME-OUT event timer id 30
+[2024-07-31 02:59:10.210] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:10.210] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:12.269] [smf_n4 ] [info] TIME-OUT event timer id 34
+[2024-07-31 02:59:12.270] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:12.270] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:15.210] [smf_n4 ] [info] TIME-OUT event timer id 38
+[2024-07-31 02:59:17.270] [smf_n4 ] [info] TIME-OUT event timer id 42
+[2024-07-31 02:59:19.905] [smf_app] [info] TIME-OUT event timer id 35
+[2024-07-31 02:59:20.211] [smf_n4 ] [info] TIME-OUT event timer id 39
+[2024-07-31 02:59:20.211] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:20.211] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:22.270] [smf_n4 ] [info] TIME-OUT event timer id 43
+[2024-07-31 02:59:22.270] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:22.271] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:25.211] [smf_n4 ] [info] TIME-OUT event timer id 47
+[2024-07-31 02:59:27.271] [smf_n4 ] [info] TIME-OUT event timer id 51
+[2024-07-31 02:59:29.905] [smf_app] [info] TIME-OUT event timer id 44
+[2024-07-31 02:59:30.211] [smf_n4 ] [info] TIME-OUT event timer id 48
+[2024-07-31 02:59:30.211] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:30.212] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:32.273] [smf_n4 ] [info] TIME-OUT event timer id 52
+[2024-07-31 02:59:32.274] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:32.275] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:35.212] [smf_n4 ] [info] TIME-OUT event timer id 56
+[2024-07-31 02:59:37.274] [smf_n4 ] [info] TIME-OUT event timer id 60
+[2024-07-31 02:59:39.908] [smf_app] [info] TIME-OUT event timer id 53
+[2024-07-31 02:59:40.212] [smf_n4 ] [info] TIME-OUT event timer id 57
+[2024-07-31 02:59:40.212] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:40.213] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:42.275] [smf_n4 ] [info] TIME-OUT event timer id 61
+[2024-07-31 02:59:42.275] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:42.276] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:45.219] [smf_n4 ] [info] TIME-OUT event timer id 65
+[2024-07-31 02:59:47.276] [smf_n4 ] [info] TIME-OUT event timer id 69
+[2024-07-31 02:59:49.909] [smf_app] [info] TIME-OUT event timer id 62
+[2024-07-31 02:59:50.213] [smf_n4 ] [info] TIME-OUT event timer id 66
+[2024-07-31 02:59:50.213] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 02:59:50.213] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:52.276] [smf_n4 ] [info] TIME-OUT event timer id 70
+[2024-07-31 02:59:52.277] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 02:59:52.277] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:55.213] [smf_n4 ] [info] TIME-OUT event timer id 74
+[2024-07-31 02:59:57.277] [smf_n4 ] [info] TIME-OUT event timer id 78
+[2024-07-31 02:59:59.911] [smf_app] [info] TIME-OUT event timer id 71
+[2024-07-31 03:00:00.214] [smf_n4 ] [info] TIME-OUT event timer id 75
+[2024-07-31 03:00:00.214] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:00.214] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:02.278] [smf_n4 ] [info] TIME-OUT event timer id 79
+[2024-07-31 03:00:02.278] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:02.278] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:05.214] [smf_n4 ] [info] TIME-OUT event timer id 83
+[2024-07-31 03:00:07.278] [smf_n4 ] [info] TIME-OUT event timer id 87
+[2024-07-31 03:00:09.911] [smf_app] [info] TIME-OUT event timer id 80
+[2024-07-31 03:00:10.214] [smf_n4 ] [info] TIME-OUT event timer id 84
+[2024-07-31 03:00:10.214] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:10.214] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:12.279] [smf_n4 ] [info] TIME-OUT event timer id 88
+[2024-07-31 03:00:12.279] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:12.279] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:15.215] [smf_n4 ] [info] TIME-OUT event timer id 92
+[2024-07-31 03:00:17.279] [smf_n4 ] [info] TIME-OUT event timer id 96
+[2024-07-31 03:00:19.911] [smf_app] [info] TIME-OUT event timer id 89
+[2024-07-31 03:00:20.215] [smf_n4 ] [info] TIME-OUT event timer id 93
+[2024-07-31 03:00:20.215] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:20.215] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:22.279] [smf_n4 ] [info] TIME-OUT event timer id 97
+[2024-07-31 03:00:22.279] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:22.280] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:25.233] [smf_n4 ] [info] TIME-OUT event timer id 101
+[2024-07-31 03:00:27.279] [smf_n4 ] [info] TIME-OUT event timer id 105
+[2024-07-31 03:00:29.912] [smf_app] [info] TIME-OUT event timer id 98
+[2024-07-31 03:00:30.216] [smf_n4 ] [info] TIME-OUT event timer id 102
+[2024-07-31 03:00:30.216] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:30.216] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:32.280] [smf_n4 ] [info] TIME-OUT event timer id 106
+[2024-07-31 03:00:32.280] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:32.281] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:35.216] [smf_n4 ] [info] TIME-OUT event timer id 110
+[2024-07-31 03:00:37.280] [smf_n4 ] [info] TIME-OUT event timer id 114
+[2024-07-31 03:00:39.914] [smf_app] [info] TIME-OUT event timer id 107
+[2024-07-31 03:00:40.217] [smf_n4 ] [info] TIME-OUT event timer id 111
+[2024-07-31 03:00:40.217] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:40.217] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:42.281] [smf_n4 ] [info] TIME-OUT event timer id 115
+[2024-07-31 03:00:42.281] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:42.281] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:45.217] [smf_n4 ] [info] TIME-OUT event timer id 119
+[2024-07-31 03:00:47.281] [smf_n4 ] [info] TIME-OUT event timer id 123
+[2024-07-31 03:00:49.914] [smf_app] [info] TIME-OUT event timer id 116
+[2024-07-31 03:00:50.217] [smf_n4 ] [info] TIME-OUT event timer id 120
+[2024-07-31 03:00:50.217] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:00:50.218] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:52.281] [smf_n4 ] [info] TIME-OUT event timer id 124
+[2024-07-31 03:00:52.282] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:00:52.282] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:55.218] [smf_n4 ] [info] TIME-OUT event timer id 128
+[2024-07-31 03:00:57.282] [smf_n4 ] [info] TIME-OUT event timer id 132
+[2024-07-31 03:00:59.914] [smf_app] [info] TIME-OUT event timer id 125
+[2024-07-31 03:01:00.218] [smf_n4 ] [info] TIME-OUT event timer id 129
+[2024-07-31 03:01:00.218] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:00.219] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:02.283] [smf_n4 ] [info] TIME-OUT event timer id 133
+[2024-07-31 03:01:02.283] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:02.283] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:05.218] [smf_n4 ] [info] TIME-OUT event timer id 137
+[2024-07-31 03:01:07.283] [smf_n4 ] [info] TIME-OUT event timer id 141
+[2024-07-31 03:01:09.915] [smf_app] [info] TIME-OUT event timer id 134
+[2024-07-31 03:01:10.219] [smf_n4 ] [info] TIME-OUT event timer id 138
+[2024-07-31 03:01:10.219] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:10.219] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:12.284] [smf_n4 ] [info] TIME-OUT event timer id 142
+[2024-07-31 03:01:12.284] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:12.284] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:15.221] [smf_n4 ] [info] TIME-OUT event timer id 146
+[2024-07-31 03:01:17.284] [smf_n4 ] [info] TIME-OUT event timer id 150
+[2024-07-31 03:01:19.919] [smf_app] [info] TIME-OUT event timer id 143
+[2024-07-31 03:01:20.220] [smf_n4 ] [info] TIME-OUT event timer id 147
+[2024-07-31 03:01:20.220] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:20.220] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:22.285] [smf_n4 ] [info] TIME-OUT event timer id 151
+[2024-07-31 03:01:22.285] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:22.285] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:25.220] [smf_n4 ] [info] TIME-OUT event timer id 155
+[2024-07-31 03:01:27.285] [smf_n4 ] [info] TIME-OUT event timer id 159
+[2024-07-31 03:01:29.921] [smf_app] [info] TIME-OUT event timer id 152
+[2024-07-31 03:01:30.225] [smf_n4 ] [info] TIME-OUT event timer id 156
+[2024-07-31 03:01:30.225] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:30.226] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:32.285] [smf_n4 ] [info] TIME-OUT event timer id 160
+[2024-07-31 03:01:32.285] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:32.286] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:35.228] [smf_n4 ] [info] TIME-OUT event timer id 164
+[2024-07-31 03:01:37.285] [smf_n4 ] [info] TIME-OUT event timer id 168
+[2024-07-31 03:01:39.924] [smf_app] [info] TIME-OUT event timer id 161
+[2024-07-31 03:01:40.227] [smf_n4 ] [info] TIME-OUT event timer id 165
+[2024-07-31 03:01:40.227] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:40.227] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:42.286] [smf_n4 ] [info] TIME-OUT event timer id 169
+[2024-07-31 03:01:42.286] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:42.287] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:45.228] [smf_n4 ] [info] TIME-OUT event timer id 173
+[2024-07-31 03:01:47.286] [smf_n4 ] [info] TIME-OUT event timer id 177
+[2024-07-31 03:01:49.927] [smf_app] [info] TIME-OUT event timer id 170
+[2024-07-31 03:01:50.228] [smf_n4 ] [info] TIME-OUT event timer id 174
+[2024-07-31 03:01:50.228] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:01:50.229] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:52.287] [smf_n4 ] [info] TIME-OUT event timer id 178
+[2024-07-31 03:01:52.287] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:01:52.287] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:55.228] [smf_n4 ] [info] TIME-OUT event timer id 182
+[2024-07-31 03:01:57.288] [smf_n4 ] [info] TIME-OUT event timer id 186
+[2024-07-31 03:01:59.927] [smf_app] [info] TIME-OUT event timer id 179
+[2024-07-31 03:02:00.229] [smf_n4 ] [info] TIME-OUT event timer id 183
+[2024-07-31 03:02:00.229] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:00.230] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:02.287] [smf_n4 ] [info] TIME-OUT event timer id 187
+[2024-07-31 03:02:02.288] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:02.288] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:05.229] [smf_n4 ] [info] TIME-OUT event timer id 191
+[2024-07-31 03:02:07.288] [smf_n4 ] [info] TIME-OUT event timer id 195
+[2024-07-31 03:02:09.930] [smf_app] [info] TIME-OUT event timer id 188
+[2024-07-31 03:02:10.230] [smf_n4 ] [info] TIME-OUT event timer id 192
+[2024-07-31 03:02:10.230] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:10.230] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:12.288] [smf_n4 ] [info] TIME-OUT event timer id 196
+[2024-07-31 03:02:12.288] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:12.289] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:15.248] [smf_n4 ] [info] TIME-OUT event timer id 200
+[2024-07-31 03:02:17.289] [smf_n4 ] [info] TIME-OUT event timer id 204
+[2024-07-31 03:02:19.931] [smf_app] [info] TIME-OUT event timer id 197
+[2024-07-31 03:02:20.232] [smf_n4 ] [info] TIME-OUT event timer id 201
+[2024-07-31 03:02:20.232] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:20.232] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:22.289] [smf_n4 ] [info] TIME-OUT event timer id 205
+[2024-07-31 03:02:22.289] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:22.290] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:25.232] [smf_n4 ] [info] TIME-OUT event timer id 209
+[2024-07-31 03:02:27.289] [smf_n4 ] [info] TIME-OUT event timer id 213
+[2024-07-31 03:02:29.931] [smf_app] [info] TIME-OUT event timer id 206
+[2024-07-31 03:02:30.232] [smf_n4 ] [info] TIME-OUT event timer id 210
+[2024-07-31 03:02:30.232] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:30.233] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:32.290] [smf_n4 ] [info] TIME-OUT event timer id 214
+[2024-07-31 03:02:32.290] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:32.291] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:35.233] [smf_n4 ] [info] TIME-OUT event timer id 218
+[2024-07-31 03:02:37.290] [smf_n4 ] [info] TIME-OUT event timer id 222
+[2024-07-31 03:02:39.932] [smf_app] [info] TIME-OUT event timer id 215
+[2024-07-31 03:02:40.233] [smf_n4 ] [info] TIME-OUT event timer id 219
+[2024-07-31 03:02:40.233] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:40.234] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:42.291] [smf_n4 ] [info] TIME-OUT event timer id 223
+[2024-07-31 03:02:42.291] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:42.291] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:45.234] [smf_n4 ] [info] TIME-OUT event timer id 227
+[2024-07-31 03:02:47.291] [smf_n4 ] [info] TIME-OUT event timer id 231
+[2024-07-31 03:02:49.932] [smf_app] [info] TIME-OUT event timer id 224
+[2024-07-31 03:02:50.236] [smf_n4 ] [info] TIME-OUT event timer id 228
+[2024-07-31 03:02:50.236] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:02:50.237] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:52.292] [smf_n4 ] [info] TIME-OUT event timer id 232
+[2024-07-31 03:02:52.292] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:02:52.292] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:55.237] [smf_n4 ] [info] TIME-OUT event timer id 236
+[2024-07-31 03:02:57.292] [smf_n4 ] [info] TIME-OUT event timer id 240
+[2024-07-31 03:02:59.932] [smf_app] [info] TIME-OUT event timer id 233
+[2024-07-31 03:03:00.239] [smf_n4 ] [info] TIME-OUT event timer id 237
+[2024-07-31 03:03:00.239] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:00.239] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:02.292] [smf_n4 ] [info] TIME-OUT event timer id 241
+[2024-07-31 03:03:02.292] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:02.292] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:05.239] [smf_n4 ] [info] TIME-OUT event timer id 245
+[2024-07-31 03:03:07.293] [smf_n4 ] [info] TIME-OUT event timer id 249
+[2024-07-31 03:03:09.932] [smf_app] [info] TIME-OUT event timer id 242
+[2024-07-31 03:03:10.239] [smf_n4 ] [info] TIME-OUT event timer id 246
+[2024-07-31 03:03:10.239] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:10.240] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:12.293] [smf_n4 ] [info] TIME-OUT event timer id 250
+[2024-07-31 03:03:12.293] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:12.293] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:15.240] [smf_n4 ] [info] TIME-OUT event timer id 254
+[2024-07-31 03:03:17.293] [smf_n4 ] [info] TIME-OUT event timer id 258
+[2024-07-31 03:03:19.932] [smf_app] [info] TIME-OUT event timer id 251
+[2024-07-31 03:03:20.240] [smf_n4 ] [info] TIME-OUT event timer id 255
+[2024-07-31 03:03:20.240] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:20.241] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:22.294] [smf_n4 ] [info] TIME-OUT event timer id 259
+[2024-07-31 03:03:22.294] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:22.294] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:25.241] [smf_n4 ] [info] TIME-OUT event timer id 263
+[2024-07-31 03:03:27.294] [smf_n4 ] [info] TIME-OUT event timer id 267
+[2024-07-31 03:03:29.933] [smf_app] [info] TIME-OUT event timer id 260
+[2024-07-31 03:03:30.245] [smf_n4 ] [info] TIME-OUT event timer id 264
+[2024-07-31 03:03:30.245] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:30.246] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:32.294] [smf_n4 ] [info] TIME-OUT event timer id 268
+[2024-07-31 03:03:32.294] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:32.295] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:35.246] [smf_n4 ] [info] TIME-OUT event timer id 272
+[2024-07-31 03:03:37.295] [smf_n4 ] [info] TIME-OUT event timer id 276
+[2024-07-31 03:03:39.934] [smf_app] [info] TIME-OUT event timer id 269
+[2024-07-31 03:03:40.246] [smf_n4 ] [info] TIME-OUT event timer id 273
+[2024-07-31 03:03:40.246] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:40.246] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:42.295] [smf_n4 ] [info] TIME-OUT event timer id 277
+[2024-07-31 03:03:42.295] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:42.295] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:45.247] [smf_n4 ] [info] TIME-OUT event timer id 281
+[2024-07-31 03:03:47.295] [smf_n4 ] [info] TIME-OUT event timer id 285
+[2024-07-31 03:03:49.934] [smf_app] [info] TIME-OUT event timer id 278
+[2024-07-31 03:03:50.247] [smf_n4 ] [info] TIME-OUT event timer id 282
+[2024-07-31 03:03:50.247] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:03:50.248] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:52.300] [smf_n4 ] [info] TIME-OUT event timer id 286
+[2024-07-31 03:03:52.300] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:03:52.300] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:55.248] [smf_n4 ] [info] TIME-OUT event timer id 290
+[2024-07-31 03:03:57.300] [smf_n4 ] [info] TIME-OUT event timer id 294
+[2024-07-31 03:03:59.935] [smf_app] [info] TIME-OUT event timer id 287
+[2024-07-31 03:04:00.264] [smf_n4 ] [info] TIME-OUT event timer id 291
+[2024-07-31 03:04:00.264] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:00.265] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:02.321] [smf_n4 ] [info] TIME-OUT event timer id 295
+[2024-07-31 03:04:02.321] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:02.321] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:05.265] [smf_n4 ] [info] TIME-OUT event timer id 299
+[2024-07-31 03:04:07.324] [smf_n4 ] [info] TIME-OUT event timer id 303
+[2024-07-31 03:04:09.935] [smf_app] [info] TIME-OUT event timer id 296
+[2024-07-31 03:04:10.265] [smf_n4 ] [info] TIME-OUT event timer id 300
+[2024-07-31 03:04:10.265] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:10.265] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:12.321] [smf_n4 ] [info] TIME-OUT event timer id 304
+[2024-07-31 03:04:12.321] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:12.322] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:15.265] [smf_n4 ] [info] TIME-OUT event timer id 308
+[2024-07-31 03:04:17.324] [smf_n4 ] [info] TIME-OUT event timer id 312
+[2024-07-31 03:04:19.935] [smf_app] [info] TIME-OUT event timer id 305
+[2024-07-31 03:04:20.265] [smf_n4 ] [info] TIME-OUT event timer id 309
+[2024-07-31 03:04:20.265] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:20.266] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:22.322] [smf_n4 ] [info] TIME-OUT event timer id 313
+[2024-07-31 03:04:22.322] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:22.323] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:25.266] [smf_n4 ] [info] TIME-OUT event timer id 317
+[2024-07-31 03:04:27.323] [smf_n4 ] [info] TIME-OUT event timer id 321
+[2024-07-31 03:04:29.935] [smf_app] [info] TIME-OUT event timer id 314
+[2024-07-31 03:04:30.266] [smf_n4 ] [info] TIME-OUT event timer id 318
+[2024-07-31 03:04:30.266] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:30.267] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:32.323] [smf_n4 ] [info] TIME-OUT event timer id 322
+[2024-07-31 03:04:32.323] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:32.323] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:35.267] [smf_n4 ] [info] TIME-OUT event timer id 326
+[2024-07-31 03:04:37.326] [smf_n4 ] [info] TIME-OUT event timer id 330
+[2024-07-31 03:04:39.936] [smf_app] [info] TIME-OUT event timer id 323
+[2024-07-31 03:04:40.267] [smf_n4 ] [info] TIME-OUT event timer id 327
+[2024-07-31 03:04:40.267] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:40.267] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:42.328] [smf_n4 ] [info] TIME-OUT event timer id 331
+[2024-07-31 03:04:42.328] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:42.328] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:45.267] [smf_n4 ] [info] TIME-OUT event timer id 335
+[2024-07-31 03:04:47.335] [smf_n4 ] [info] TIME-OUT event timer id 339
+[2024-07-31 03:04:49.937] [smf_app] [info] TIME-OUT event timer id 332
+[2024-07-31 03:04:50.267] [smf_n4 ] [info] TIME-OUT event timer id 336
+[2024-07-31 03:04:50.267] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:04:50.268] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:52.329] [smf_n4 ] [info] TIME-OUT event timer id 340
+[2024-07-31 03:04:52.329] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:04:52.329] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:55.268] [smf_n4 ] [info] TIME-OUT event timer id 344
+[2024-07-31 03:04:57.329] [smf_n4 ] [info] TIME-OUT event timer id 348
+[2024-07-31 03:04:59.937] [smf_app] [info] TIME-OUT event timer id 341
+[2024-07-31 03:05:00.268] [smf_n4 ] [info] TIME-OUT event timer id 345
+[2024-07-31 03:05:00.268] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:00.268] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:02.329] [smf_n4 ] [info] TIME-OUT event timer id 349
+[2024-07-31 03:05:02.330] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:02.330] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:05.269] [smf_n4 ] [info] TIME-OUT event timer id 353
+[2024-07-31 03:05:07.333] [smf_n4 ] [info] TIME-OUT event timer id 357
+[2024-07-31 03:05:09.937] [smf_app] [info] TIME-OUT event timer id 350
+[2024-07-31 03:05:10.269] [smf_n4 ] [info] TIME-OUT event timer id 354
+[2024-07-31 03:05:10.269] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:10.269] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:12.332] [smf_n4 ] [info] TIME-OUT event timer id 358
+[2024-07-31 03:05:12.332] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:12.333] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:15.269] [smf_n4 ] [info] TIME-OUT event timer id 362
+[2024-07-31 03:05:17.333] [smf_n4 ] [info] TIME-OUT event timer id 366
+[2024-07-31 03:05:19.938] [smf_app] [info] TIME-OUT event timer id 359
+[2024-07-31 03:05:20.269] [smf_n4 ] [info] TIME-OUT event timer id 363
+[2024-07-31 03:05:20.270] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:20.270] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:22.333] [smf_n4 ] [info] TIME-OUT event timer id 367
+[2024-07-31 03:05:22.334] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:22.334] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:25.270] [smf_n4 ] [info] TIME-OUT event timer id 371
+[2024-07-31 03:05:27.334] [smf_n4 ] [info] TIME-OUT event timer id 375
+[2024-07-31 03:05:29.938] [smf_app] [info] TIME-OUT event timer id 368
+[2024-07-31 03:05:30.270] [smf_n4 ] [info] TIME-OUT event timer id 372
+[2024-07-31 03:05:30.270] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:30.271] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:32.335] [smf_n4 ] [info] TIME-OUT event timer id 376
+[2024-07-31 03:05:32.335] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:32.335] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:35.271] [smf_n4 ] [info] TIME-OUT event timer id 380
+[2024-07-31 03:05:37.337] [smf_n4 ] [info] TIME-OUT event timer id 384
+[2024-07-31 03:05:39.939] [smf_app] [info] TIME-OUT event timer id 377
+[2024-07-31 03:05:40.271] [smf_n4 ] [info] TIME-OUT event timer id 381
+[2024-07-31 03:05:40.271] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:40.271] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:42.337] [smf_n4 ] [info] TIME-OUT event timer id 385
+[2024-07-31 03:05:42.337] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:42.338] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:45.277] [smf_n4 ] [info] TIME-OUT event timer id 389
+[2024-07-31 03:05:47.344] [smf_n4 ] [info] TIME-OUT event timer id 393
+[2024-07-31 03:05:49.939] [smf_app] [info] TIME-OUT event timer id 386
+[2024-07-31 03:05:50.272] [smf_n4 ] [info] TIME-OUT event timer id 390
+[2024-07-31 03:05:50.272] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:05:50.272] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:52.338] [smf_n4 ] [info] TIME-OUT event timer id 394
+[2024-07-31 03:05:52.338] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:05:52.339] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:55.273] [smf_n4 ] [info] TIME-OUT event timer id 398
+[2024-07-31 03:05:57.361] [smf_n4 ] [info] TIME-OUT event timer id 402
+[2024-07-31 03:05:59.939] [smf_app] [info] TIME-OUT event timer id 395
+[2024-07-31 03:06:00.272] [smf_n4 ] [info] TIME-OUT event timer id 399
+[2024-07-31 03:06:00.272] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:00.273] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:02.339] [smf_n4 ] [info] TIME-OUT event timer id 403
+[2024-07-31 03:06:02.339] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:02.340] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:05.273] [smf_n4 ] [info] TIME-OUT event timer id 407
+[2024-07-31 03:06:07.340] [smf_n4 ] [info] TIME-OUT event timer id 411
+[2024-07-31 03:06:09.940] [smf_app] [info] TIME-OUT event timer id 404
+[2024-07-31 03:06:10.273] [smf_n4 ] [info] TIME-OUT event timer id 408
+[2024-07-31 03:06:10.273] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:10.273] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:12.340] [smf_n4 ] [info] TIME-OUT event timer id 412
+[2024-07-31 03:06:12.340] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:12.340] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:15.273] [smf_n4 ] [info] TIME-OUT event timer id 416
+[2024-07-31 03:06:17.341] [smf_n4 ] [info] TIME-OUT event timer id 420
+[2024-07-31 03:06:19.940] [smf_app] [info] TIME-OUT event timer id 413
+[2024-07-31 03:06:20.274] [smf_n4 ] [info] TIME-OUT event timer id 417
+[2024-07-31 03:06:20.274] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:20.274] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:22.341] [smf_n4 ] [info] TIME-OUT event timer id 421
+[2024-07-31 03:06:22.341] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:22.342] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:25.274] [smf_n4 ] [info] TIME-OUT event timer id 425
+[2024-07-31 03:06:27.341] [smf_n4 ] [info] TIME-OUT event timer id 429
+[2024-07-31 03:06:29.940] [smf_app] [info] TIME-OUT event timer id 422
+[2024-07-31 03:06:30.275] [smf_n4 ] [info] TIME-OUT event timer id 426
+[2024-07-31 03:06:30.275] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:30.276] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:32.345] [smf_n4 ] [info] TIME-OUT event timer id 430
+[2024-07-31 03:06:32.345] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:32.345] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:35.275] [smf_n4 ] [info] TIME-OUT event timer id 434
+[2024-07-31 03:06:37.346] [smf_n4 ] [info] TIME-OUT event timer id 438
+[2024-07-31 03:06:39.941] [smf_app] [info] TIME-OUT event timer id 431
+[2024-07-31 03:06:40.276] [smf_n4 ] [info] TIME-OUT event timer id 435
+[2024-07-31 03:06:40.276] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:40.276] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:42.345] [smf_n4 ] [info] TIME-OUT event timer id 439
+[2024-07-31 03:06:42.345] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:42.346] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:45.276] [smf_n4 ] [info] TIME-OUT event timer id 443
+[2024-07-31 03:06:47.346] [smf_n4 ] [info] TIME-OUT event timer id 447
+[2024-07-31 03:06:49.941] [smf_app] [info] TIME-OUT event timer id 440
+[2024-07-31 03:06:50.281] [smf_n4 ] [info] TIME-OUT event timer id 444
+[2024-07-31 03:06:50.281] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:06:50.281] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:52.346] [smf_n4 ] [info] TIME-OUT event timer id 448
+[2024-07-31 03:06:52.346] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:06:52.347] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:55.281] [smf_n4 ] [info] TIME-OUT event timer id 452
+[2024-07-31 03:06:57.347] [smf_n4 ] [info] TIME-OUT event timer id 456
+[2024-07-31 03:06:59.941] [smf_app] [info] TIME-OUT event timer id 449
+[2024-07-31 03:07:00.281] [smf_n4 ] [info] TIME-OUT event timer id 453
+[2024-07-31 03:07:00.281] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:00.282] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:02.347] [smf_n4 ] [info] TIME-OUT event timer id 457
+[2024-07-31 03:07:02.347] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:02.348] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:05.281] [smf_n4 ] [info] TIME-OUT event timer id 461
+[2024-07-31 03:07:07.348] [smf_n4 ] [info] TIME-OUT event timer id 465
+[2024-07-31 03:07:09.941] [smf_app] [info] TIME-OUT event timer id 458
+[2024-07-31 03:07:10.282] [smf_n4 ] [info] TIME-OUT event timer id 462
+[2024-07-31 03:07:10.282] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:10.282] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:12.348] [smf_n4 ] [info] TIME-OUT event timer id 466
+[2024-07-31 03:07:12.348] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:12.349] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:15.283] [smf_n4 ] [info] TIME-OUT event timer id 470
+[2024-07-31 03:07:17.348] [smf_n4 ] [info] TIME-OUT event timer id 474
+[2024-07-31 03:07:19.942] [smf_app] [info] TIME-OUT event timer id 467
+[2024-07-31 03:07:20.283] [smf_n4 ] [info] TIME-OUT event timer id 471
+[2024-07-31 03:07:20.283] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:20.283] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:22.350] [smf_n4 ] [info] TIME-OUT event timer id 475
+[2024-07-31 03:07:22.350] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:22.350] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:25.292] [smf_n4 ] [info] TIME-OUT event timer id 479
+[2024-07-31 03:07:27.351] [smf_n4 ] [info] TIME-OUT event timer id 483
+[2024-07-31 03:07:29.943] [smf_app] [info] TIME-OUT event timer id 476
+[2024-07-31 03:07:30.284] [smf_n4 ] [info] TIME-OUT event timer id 480
+[2024-07-31 03:07:30.284] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:30.284] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:32.350] [smf_n4 ] [info] TIME-OUT event timer id 484
+[2024-07-31 03:07:32.350] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:32.351] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:35.284] [smf_n4 ] [info] TIME-OUT event timer id 488
+[2024-07-31 03:07:37.351] [smf_n4 ] [info] TIME-OUT event timer id 492
+[2024-07-31 03:07:39.943] [smf_app] [info] TIME-OUT event timer id 485
+[2024-07-31 03:07:40.285] [smf_n4 ] [info] TIME-OUT event timer id 489
+[2024-07-31 03:07:40.285] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:40.285] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:42.351] [smf_n4 ] [info] TIME-OUT event timer id 493
+[2024-07-31 03:07:42.351] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:42.352] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:45.285] [smf_n4 ] [info] TIME-OUT event timer id 497
+[2024-07-31 03:07:47.352] [smf_n4 ] [info] TIME-OUT event timer id 501
+[2024-07-31 03:07:49.943] [smf_app] [info] TIME-OUT event timer id 494
+[2024-07-31 03:07:50.285] [smf_n4 ] [info] TIME-OUT event timer id 498
+[2024-07-31 03:07:50.285] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:07:50.286] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:52.352] [smf_n4 ] [info] TIME-OUT event timer id 502
+[2024-07-31 03:07:52.352] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:07:52.353] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:55.286] [smf_n4 ] [info] TIME-OUT event timer id 506
+[2024-07-31 03:07:57.353] [smf_n4 ] [info] TIME-OUT event timer id 510
+[2024-07-31 03:07:59.944] [smf_app] [info] TIME-OUT event timer id 503
+[2024-07-31 03:08:00.286] [smf_n4 ] [info] TIME-OUT event timer id 507
+[2024-07-31 03:08:00.286] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:00.286] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:02.354] [smf_n4 ] [info] TIME-OUT event timer id 511
+[2024-07-31 03:08:02.354] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:02.355] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:05.286] [smf_n4 ] [info] TIME-OUT event timer id 515
+[2024-07-31 03:08:07.354] [smf_n4 ] [info] TIME-OUT event timer id 519
+[2024-07-31 03:08:09.948] [smf_app] [info] TIME-OUT event timer id 512
+[2024-07-31 03:08:10.287] [smf_n4 ] [info] TIME-OUT event timer id 516
+[2024-07-31 03:08:10.287] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:10.287] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:12.355] [smf_n4 ] [info] TIME-OUT event timer id 520
+[2024-07-31 03:08:12.355] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:12.355] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:15.287] [smf_n4 ] [info] TIME-OUT event timer id 524
+[2024-07-31 03:08:17.360] [smf_n4 ] [info] TIME-OUT event timer id 528
+[2024-07-31 03:08:19.953] [smf_app] [info] TIME-OUT event timer id 521
+[2024-07-31 03:08:20.287] [smf_n4 ] [info] TIME-OUT event timer id 525
+[2024-07-31 03:08:20.287] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:20.288] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:22.355] [smf_n4 ] [info] TIME-OUT event timer id 529
+[2024-07-31 03:08:22.355] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:22.356] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:25.291] [smf_n4 ] [info] TIME-OUT event timer id 533
+[2024-07-31 03:08:27.356] [smf_n4 ] [info] TIME-OUT event timer id 537
+[2024-07-31 03:08:29.956] [smf_app] [info] TIME-OUT event timer id 530
+[2024-07-31 03:08:30.288] [smf_n4 ] [info] TIME-OUT event timer id 534
+[2024-07-31 03:08:30.288] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:30.289] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:32.356] [smf_n4 ] [info] TIME-OUT event timer id 538
+[2024-07-31 03:08:32.356] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:32.356] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:35.288] [smf_n4 ] [info] TIME-OUT event timer id 542
+[2024-07-31 03:08:37.356] [smf_n4 ] [info] TIME-OUT event timer id 546
+[2024-07-31 03:08:39.957] [smf_app] [info] TIME-OUT event timer id 539
+[2024-07-31 03:08:40.289] [smf_n4 ] [info] TIME-OUT event timer id 543
+[2024-07-31 03:08:40.289] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:40.289] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:42.356] [smf_n4 ] [info] TIME-OUT event timer id 547
+[2024-07-31 03:08:42.357] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:42.357] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:45.290] [smf_n4 ] [info] TIME-OUT event timer id 551
+[2024-07-31 03:08:47.357] [smf_n4 ] [info] TIME-OUT event timer id 555
+[2024-07-31 03:08:49.958] [smf_app] [info] TIME-OUT event timer id 548
+[2024-07-31 03:08:50.290] [smf_n4 ] [info] TIME-OUT event timer id 552
+[2024-07-31 03:08:50.290] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:08:50.290] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:52.362] [smf_n4 ] [info] TIME-OUT event timer id 556
+[2024-07-31 03:08:52.362] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:08:52.363] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:55.290] [smf_n4 ] [info] TIME-OUT event timer id 560
+[2024-07-31 03:08:57.363] [smf_n4 ] [info] TIME-OUT event timer id 564
+[2024-07-31 03:08:59.958] [smf_app] [info] TIME-OUT event timer id 557
+[2024-07-31 03:09:00.290] [smf_n4 ] [info] TIME-OUT event timer id 561
+[2024-07-31 03:09:00.290] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:00.291] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:02.363] [smf_n4 ] [info] TIME-OUT event timer id 565
+[2024-07-31 03:09:02.363] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:02.363] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:05.292] [smf_n4 ] [info] TIME-OUT event timer id 569
+[2024-07-31 03:09:07.363] [smf_n4 ] [info] TIME-OUT event timer id 573
+[2024-07-31 03:09:09.958] [smf_app] [info] TIME-OUT event timer id 566
+[2024-07-31 03:09:10.291] [smf_n4 ] [info] TIME-OUT event timer id 570
+[2024-07-31 03:09:10.291] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:10.292] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:12.364] [smf_n4 ] [info] TIME-OUT event timer id 574
+[2024-07-31 03:09:12.364] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:12.364] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:15.292] [smf_n4 ] [info] TIME-OUT event timer id 578
+[2024-07-31 03:09:17.364] [smf_n4 ] [info] TIME-OUT event timer id 582
+[2024-07-31 03:09:19.959] [smf_app] [info] TIME-OUT event timer id 575
+[2024-07-31 03:09:20.292] [smf_n4 ] [info] TIME-OUT event timer id 579
+[2024-07-31 03:09:20.292] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:20.293] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:22.367] [smf_n4 ] [info] TIME-OUT event timer id 583
+[2024-07-31 03:09:22.367] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:22.368] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:25.292] [smf_n4 ] [info] TIME-OUT event timer id 587
+[2024-07-31 03:09:27.368] [smf_n4 ] [info] TIME-OUT event timer id 591
+[2024-07-31 03:09:29.960] [smf_app] [info] TIME-OUT event timer id 584
+[2024-07-31 03:09:30.293] [smf_n4 ] [info] TIME-OUT event timer id 588
+[2024-07-31 03:09:30.293] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:30.294] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:32.368] [smf_n4 ] [info] TIME-OUT event timer id 592
+[2024-07-31 03:09:32.368] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:32.369] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:35.293] [smf_n4 ] [info] TIME-OUT event timer id 596
+[2024-07-31 03:09:37.369] [smf_n4 ] [info] TIME-OUT event timer id 600
+[2024-07-31 03:09:39.961] [smf_app] [info] TIME-OUT event timer id 593
+[2024-07-31 03:09:40.294] [smf_n4 ] [info] TIME-OUT event timer id 597
+[2024-07-31 03:09:40.294] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:40.295] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:42.369] [smf_n4 ] [info] TIME-OUT event timer id 601
+[2024-07-31 03:09:42.369] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:42.370] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:45.295] [smf_n4 ] [info] TIME-OUT event timer id 605
+[2024-07-31 03:09:47.370] [smf_n4 ] [info] TIME-OUT event timer id 609
+[2024-07-31 03:09:49.961] [smf_app] [info] TIME-OUT event timer id 602
+[2024-07-31 03:09:50.295] [smf_n4 ] [info] TIME-OUT event timer id 606
+[2024-07-31 03:09:50.295] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:09:50.295] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:52.370] [smf_n4 ] [info] TIME-OUT event timer id 610
+[2024-07-31 03:09:52.370] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:09:52.371] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:55.295] [smf_n4 ] [info] TIME-OUT event timer id 614
+[2024-07-31 03:09:57.371] [smf_n4 ] [info] TIME-OUT event timer id 618
+[2024-07-31 03:09:59.962] [smf_app] [info] TIME-OUT event timer id 611
+[2024-07-31 03:10:00.296] [smf_n4 ] [info] TIME-OUT event timer id 615
+[2024-07-31 03:10:00.296] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:10:00.296] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:02.371] [smf_n4 ] [info] TIME-OUT event timer id 619
+[2024-07-31 03:10:02.371] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:10:02.371] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:05.296] [smf_n4 ] [info] TIME-OUT event timer id 623
+[2024-07-31 03:10:07.371] [smf_n4 ] [info] TIME-OUT event timer id 627
+[2024-07-31 03:10:09.963] [smf_app] [info] TIME-OUT event timer id 620
+[2024-07-31 03:10:10.297] [smf_n4 ] [info] TIME-OUT event timer id 624
+[2024-07-31 03:10:10.297] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:10:10.297] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:12.371] [smf_n4 ] [info] TIME-OUT event timer id 628
+[2024-07-31 03:10:12.371] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:10:12.372] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:15.297] [smf_n4 ] [info] TIME-OUT event timer id 632
+[2024-07-31 03:10:17.376] [smf_n4 ] [info] TIME-OUT event timer id 636
+[2024-07-31 03:10:19.963] [smf_app] [info] TIME-OUT event timer id 629
+[2024-07-31 03:10:20.297] [smf_n4 ] [info] TIME-OUT event timer id 633
+[2024-07-31 03:10:20.297] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:10:20.297] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:22.372] [smf_n4 ] [info] TIME-OUT event timer id 637
+[2024-07-31 03:10:22.372] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:10:22.372] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:25.297] [smf_n4 ] [info] TIME-OUT event timer id 641
+[2024-07-31 03:10:27.372] [smf_n4 ] [info] TIME-OUT event timer id 645
+[2024-07-31 03:10:29.963] [smf_app] [info] TIME-OUT event timer id 638
+[2024-07-31 03:10:30.298] [smf_n4 ] [info] TIME-OUT event timer id 642
+[2024-07-31 03:10:30.298] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1560343562 starting
+[2024-07-31 03:10:30.298] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:32.373] [smf_n4 ] [info] TIME-OUT event timer id 646
+[2024-07-31 03:10:32.373] [smf_n4 ] [info] PFCP HEARTBEAT PROCEDURE hash 1577120778 starting
+[2024-07-31 03:10:32.373] [smf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:35.298] [smf_n4 ] [info] TIME-OUT event timer id 650
