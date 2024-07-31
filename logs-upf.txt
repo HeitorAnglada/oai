@@ -1,0 +1,815 @@
+[2024-07-31 02:58:29.989] [upf_app] [start] Options parsed
+[2024-07-31 02:58:29.989] [upf_app] [debug] Parsing the configuration file, file type YAML.
+[2024-07-31 02:58:29.990] [config ] [info] Reading NF configuration from /openair-upf/etc/config.yaml
+[2024-07-31 02:58:30.000] [config ] [debug] Unknown NF amf in configuration. Ignored
+[2024-07-31 02:58:30.000] [config ] [debug] Unknown NF udm in configuration. Ignored
+[2024-07-31 02:58:30.000] [config ] [debug] Unknown NF udr in configuration. Ignored
+[2024-07-31 02:58:30.000] [config ] [debug] Unknown NF ausf in configuration. Ignored
+[2024-07-31 02:58:30.000] [config ] [debug] Unknown NF nssf in configuration. Ignored
+[2024-07-31 02:58:30.002] [config ] [debug] Validating configuration of log_level
+[2024-07-31 02:58:30.017] [config ] [warning] The IPv6 prefix / length  is not valid
+[2024-07-31 02:58:30.018] [config ] [info] Configured host oai-nrf is an FQDN. Resolve on NF startup
+[2024-07-31 02:58:30.019] [config ] [info] ==== OPENAIRINTERFACE upf vBranch: HEAD Abrev. Hash: 93cab8f Date: Thu Dec 14 14:16:09 2023 +0000 ====
+[2024-07-31 02:58:30.019] [config ] [info] Basic Configuration:
+[2024-07-31 02:58:30.019] [config ] [info]   - log_level..................................: info
+[2024-07-31 02:58:30.019] [config ] [info]   - register_nf................................: Yes
+[2024-07-31 02:58:30.019] [config ] [info]   - http_version...............................: 2
+[2024-07-31 02:58:30.019] [config ] [info] UPF Configuration:
+[2024-07-31 02:58:30.019] [config ] [info]   - host.......................................: oai-upf
+[2024-07-31 02:58:30.019] [config ] [info]   - SBI
+[2024-07-31 02:58:30.019] [config ] [info]     + URL......................................: http://oai-upf:80
+[2024-07-31 02:58:30.019] [config ] [info]     + API Version..............................: v1
+[2024-07-31 02:58:30.019] [config ] [info]     + IPv4 Address ............................: 10.244.0.94
+[2024-07-31 02:58:30.019] [config ] [info]   - N3:
+[2024-07-31 02:58:30.019] [config ] [info]     + Port.....................................: 2152
+[2024-07-31 02:58:30.019] [config ] [info]     + IPv4 Address ............................: 10.244.0.94
+[2024-07-31 02:58:30.019] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:30.019] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:30.019] [config ] [info]     + Network Instance.........................: access.oai.org
+[2024-07-31 02:58:30.019] [config ] [info]   - N4:
+[2024-07-31 02:58:30.019] [config ] [info]     + Port.....................................: 8805
+[2024-07-31 02:58:30.019] [config ] [info]     + IPv4 Address ............................: 10.244.0.94
+[2024-07-31 02:58:30.019] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:30.019] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:30.019] [config ] [info]   - N6:
+[2024-07-31 02:58:30.019] [config ] [info]     + Port.....................................: 2152
+[2024-07-31 02:58:30.019] [config ] [info]     + IPv4 Address ............................: 10.244.0.94
+[2024-07-31 02:58:30.019] [config ] [info]     + MTU......................................: 1500
+[2024-07-31 02:58:30.019] [config ] [info]     + Interface name: .........................: eth0
+[2024-07-31 02:58:30.019] [config ] [info]     + Network Instance.........................: core.oai.org
+[2024-07-31 02:58:30.019] [config ] [info]   - Instance ID................................: 0
+[2024-07-31 02:58:30.019] [config ] [info]   - Remote N6 Gateway..........................: 127.0.0.1
+[2024-07-31 02:58:30.019] [config ] [info]   - Support Features:
+[2024-07-31 02:58:30.019] [config ] [info]     + Enable BPF Datapath......................: No
+[2024-07-31 02:58:30.019] [config ] [info]     + Enable SNAT..............................: Yes
+[2024-07-31 02:58:30.019] [config ] [info]   - upf_info:
+[2024-07-31 02:58:30.019] [config ] [info]     + snssai_upf_info_item:
+[2024-07-31 02:58:30.019] [config ] [info]       - snssai:
+[2024-07-31 02:58:30.019] [config ] [info]         + sst..................................: 1
+[2024-07-31 02:58:30.019] [config ] [info]         + sd...................................: 0xFFFFFF (16777215)
+[2024-07-31 02:58:30.019] [config ] [info]       - dnns:
+[2024-07-31 02:58:30.019] [config ] [info]         + dnn..................................: oai
+[2024-07-31 02:58:30.019] [config ] [info] Peer NF Configuration:
+[2024-07-31 02:58:30.019] [config ] [info]   NRF:
+[2024-07-31 02:58:30.019] [config ] [info]     - host.....................................: oai-nrf
+[2024-07-31 02:58:30.019] [config ] [info]     - SBI
+[2024-07-31 02:58:30.019] [config ] [info]       + URL....................................: http://oai-nrf:80
+[2024-07-31 02:58:30.019] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:30.019] [config ] [info]   SMF:
+[2024-07-31 02:58:30.019] [config ] [info]     - host.....................................: oai-smf
+[2024-07-31 02:58:30.019] [config ] [info]     - SBI
+[2024-07-31 02:58:30.019] [config ] [info]       + URL....................................: http://oai-smf:80
+[2024-07-31 02:58:30.019] [config ] [info]       + API Version............................: v1
+[2024-07-31 02:58:30.019] [config ] [info] DNNs:
+[2024-07-31 02:58:30.019] [config ] [info] - DNN:
+[2024-07-31 02:58:30.019] [config ] [info]     + DNN......................................: oai
+[2024-07-31 02:58:30.019] [config ] [info]     + PDU session type.........................: IPV4
+[2024-07-31 02:58:30.019] [config ] [info]     + IPv4 subnet..............................: 12.1.1.0/24
+[2024-07-31 02:58:30.019] [config ] [info]     + DNS Settings:
+[2024-07-31 02:58:30.019] [config ] [info]       - primary_dns_ipv4.......................: 8.8.8.8
+[2024-07-31 02:58:30.019] [config ] [info]       - secondary_dns_ipv4.....................: 1.1.1.1
+[2024-07-31 02:58:30.019] [itti   ] [start] Starting...
+[2024-07-31 02:58:30.020] [itti   ] [start] Started
+[2024-07-31 02:58:30.020] [asc_cmd] [start] Starting...
+[2024-07-31 02:58:30.020] [itti   ] [info] Starting timer_manager_task
+[2024-07-31 02:58:30.021] [asc_cmd] [start] Started
+[2024-07-31 02:58:30.021] [upf_app] [start] Starting...
+[2024-07-31 02:58:30.023] [pfcp   ] [info] pfcp_l4_stack created listening to 10.244.0.94:8805
+[2024-07-31 02:58:30.023] [upf_n4 ] [start] Starting...
+[2024-07-31 02:58:30.025] [upf_n4 ] [start] Started
+[2024-07-31 02:58:30.025] [gtpv1_u] [info] gtpu_l4_stack created listening to 10.244.0.94:2152
+[2024-07-31 02:58:30.025] [upf_n3 ] [start] Starting...
+[2024-07-31 02:58:30.027] [upf_n3 ] [start] Started
+[2024-07-31 02:58:30.091] [upf_app] [start] Starting...
+[2024-07-31 02:58:30.092] [upf_app] [info] Send NF Instance Registration to NRF
+[2024-07-31 02:58:30.105] [upf_app] [info] Response from NRF, HTTP Code: 201
+[2024-07-31 02:58:30.105] [upf_app] [info] Response from NRF, JSON data: 
+ {"capacity":100,"heartBeatTimer":10,"ipv4Addresses":["10.244.0.94"],"json_data":null,"nfInstanceId":"bb0f7b97-d15c-4442-9c8c-fa625747519e","nfInstanceName":"OAI-UPF","nfServices":[],"nfStatus":"REGISTERED","nfType":"UPF","priority":1,"sNssais":[{"sd":"16777215","sst":1}],"upfInfo":{"sNssaiUpfInfoList":[{"dnnUpfInfoList":[{"dnn":"oai"}],"sNssai":{"sd":"16777215","sst":1}}]}}
+[2024-07-31 02:58:30.106] [upf_app] [start] Started
+[2024-07-31 02:58:30.106] [upf_app] [start] Started
+[2024-07-31 02:58:32.099] [upf_n4 ] [info] handle_receive(34 bytes)
+[2024-07-31 02:58:32.100] [upf_n4 ] [info] Handle SX ASSOCIATION SETUP REQUEST
+[2024-07-31 02:58:40.106] [upf_app] [info] TIME-OUT event timer id 1
+[2024-07-31 02:58:40.106] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:58:40.159] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:58:40.159] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:58:42.209] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:42.267] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:58:50.106] [upf_app] [info] TIME-OUT event timer id 3
+[2024-07-31 02:58:50.107] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:58:50.238] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:58:50.238] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:58:52.268] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:58:52.268] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:00.107] [upf_app] [info] TIME-OUT event timer id 5
+[2024-07-31 02:59:00.107] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:00.109] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:00.109] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:02.269] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:02.269] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:10.107] [upf_app] [info] TIME-OUT event timer id 7
+[2024-07-31 02:59:10.108] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:10.109] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:10.109] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:12.270] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:12.270] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:20.108] [upf_app] [info] TIME-OUT event timer id 9
+[2024-07-31 02:59:20.108] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:20.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:20.122] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:22.271] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:22.271] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:30.108] [upf_app] [info] TIME-OUT event timer id 11
+[2024-07-31 02:59:30.108] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:30.110] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:30.110] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:32.275] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:32.275] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:40.109] [upf_app] [info] TIME-OUT event timer id 13
+[2024-07-31 02:59:40.109] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:40.110] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:40.111] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:42.276] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:42.276] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 02:59:50.110] [upf_app] [info] TIME-OUT event timer id 15
+[2024-07-31 02:59:50.110] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 02:59:50.114] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 02:59:50.114] [upf_app] [info] Got successful response from NRF
+[2024-07-31 02:59:52.277] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 02:59:52.277] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:00.111] [upf_app] [info] TIME-OUT event timer id 17
+[2024-07-31 03:00:00.111] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:00.112] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:00.113] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:02.278] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:02.278] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:10.111] [upf_app] [info] TIME-OUT event timer id 19
+[2024-07-31 03:00:10.111] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:10.113] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:10.113] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:12.279] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:12.279] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:20.111] [upf_app] [info] TIME-OUT event timer id 21
+[2024-07-31 03:00:20.111] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:20.114] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:20.114] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:22.279] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:22.279] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:30.113] [upf_app] [info] TIME-OUT event timer id 23
+[2024-07-31 03:00:30.113] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:30.116] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:30.116] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:32.280] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:32.280] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:40.113] [upf_app] [info] TIME-OUT event timer id 25
+[2024-07-31 03:00:40.114] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:40.116] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:40.116] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:42.281] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:42.281] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:00:50.114] [upf_app] [info] TIME-OUT event timer id 27
+[2024-07-31 03:00:50.114] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:00:50.116] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:00:50.116] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:00:52.282] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:00:52.282] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:00.115] [upf_app] [info] TIME-OUT event timer id 29
+[2024-07-31 03:01:00.115] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:00.117] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:00.117] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:02.283] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:02.283] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:10.115] [upf_app] [info] TIME-OUT event timer id 31
+[2024-07-31 03:01:10.116] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:10.117] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:10.117] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:12.284] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:12.284] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:20.116] [upf_app] [info] TIME-OUT event timer id 33
+[2024-07-31 03:01:20.116] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:20.118] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:20.118] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:22.285] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:22.285] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:30.116] [upf_app] [info] TIME-OUT event timer id 35
+[2024-07-31 03:01:30.116] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:30.119] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:30.119] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:32.285] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:32.285] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:40.117] [upf_app] [info] TIME-OUT event timer id 37
+[2024-07-31 03:01:40.117] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:40.118] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:40.118] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:42.286] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:42.286] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:01:50.117] [upf_app] [info] TIME-OUT event timer id 39
+[2024-07-31 03:01:50.117] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:01:50.123] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:01:50.123] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:01:52.287] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:01:52.287] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:00.118] [upf_app] [info] TIME-OUT event timer id 41
+[2024-07-31 03:02:00.118] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:00.120] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:00.121] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:02.288] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:02.288] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:10.118] [upf_app] [info] TIME-OUT event timer id 43
+[2024-07-31 03:02:10.119] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:10.120] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:10.120] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:12.289] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:12.289] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:20.119] [upf_app] [info] TIME-OUT event timer id 45
+[2024-07-31 03:02:20.119] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:20.121] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:20.121] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:22.290] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:22.290] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:30.119] [upf_app] [info] TIME-OUT event timer id 47
+[2024-07-31 03:02:30.119] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:30.121] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:30.121] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:32.290] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:32.290] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:40.120] [upf_app] [info] TIME-OUT event timer id 49
+[2024-07-31 03:02:40.120] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:40.123] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:40.123] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:42.291] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:42.291] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:02:50.120] [upf_app] [info] TIME-OUT event timer id 51
+[2024-07-31 03:02:50.120] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:02:50.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:02:50.122] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:02:52.292] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:02:52.292] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:00.120] [upf_app] [info] TIME-OUT event timer id 53
+[2024-07-31 03:03:00.120] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:00.122] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:00.123] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:02.292] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:02.292] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:10.125] [upf_app] [info] TIME-OUT event timer id 55
+[2024-07-31 03:03:10.125] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:10.127] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:10.127] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:12.293] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:12.293] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:20.125] [upf_app] [info] TIME-OUT event timer id 57
+[2024-07-31 03:03:20.125] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:20.128] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:20.128] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:22.294] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:22.294] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:30.126] [upf_app] [info] TIME-OUT event timer id 59
+[2024-07-31 03:03:30.126] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:30.127] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:30.127] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:32.295] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:32.295] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:40.126] [upf_app] [info] TIME-OUT event timer id 61
+[2024-07-31 03:03:40.126] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:40.128] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:40.128] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:42.295] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:42.295] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:03:50.126] [upf_app] [info] TIME-OUT event timer id 63
+[2024-07-31 03:03:50.126] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:03:50.128] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:03:50.128] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:03:52.300] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:03:52.300] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:00.126] [upf_app] [info] TIME-OUT event timer id 65
+[2024-07-31 03:04:00.127] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:00.129] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:00.129] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:02.321] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:02.321] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:10.127] [upf_app] [info] TIME-OUT event timer id 67
+[2024-07-31 03:04:10.127] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:10.129] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:10.129] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:12.322] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:12.322] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:20.127] [upf_app] [info] TIME-OUT event timer id 69
+[2024-07-31 03:04:20.127] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:20.130] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:20.130] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:22.322] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:22.322] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:30.127] [upf_app] [info] TIME-OUT event timer id 71
+[2024-07-31 03:04:30.127] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:30.129] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:30.129] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:32.323] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:32.323] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:40.127] [upf_app] [info] TIME-OUT event timer id 73
+[2024-07-31 03:04:40.128] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:40.129] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:40.129] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:42.328] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:42.328] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:04:50.128] [upf_app] [info] TIME-OUT event timer id 75
+[2024-07-31 03:04:50.129] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:04:50.139] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:04:50.139] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:04:52.329] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:04:52.329] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:00.129] [upf_app] [info] TIME-OUT event timer id 77
+[2024-07-31 03:05:00.129] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:00.131] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:00.131] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:02.330] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:02.330] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:10.129] [upf_app] [info] TIME-OUT event timer id 79
+[2024-07-31 03:05:10.130] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:10.131] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:10.131] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:12.333] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:12.333] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:20.130] [upf_app] [info] TIME-OUT event timer id 81
+[2024-07-31 03:05:20.130] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:20.131] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:20.132] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:22.334] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:22.334] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:30.131] [upf_app] [info] TIME-OUT event timer id 83
+[2024-07-31 03:05:30.131] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:30.132] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:30.132] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:32.335] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:32.335] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:40.131] [upf_app] [info] TIME-OUT event timer id 85
+[2024-07-31 03:05:40.131] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:40.133] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:40.133] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:42.338] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:42.338] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:05:50.131] [upf_app] [info] TIME-OUT event timer id 87
+[2024-07-31 03:05:50.132] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:05:50.133] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:05:50.133] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:05:52.339] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:05:52.339] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:00.132] [upf_app] [info] TIME-OUT event timer id 89
+[2024-07-31 03:06:00.132] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:00.134] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:00.134] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:02.339] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:02.339] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:10.132] [upf_app] [info] TIME-OUT event timer id 91
+[2024-07-31 03:06:10.132] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:10.134] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:10.134] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:12.340] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:12.340] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:20.133] [upf_app] [info] TIME-OUT event timer id 93
+[2024-07-31 03:06:20.133] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:20.135] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:20.135] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:22.341] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:22.341] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:30.133] [upf_app] [info] TIME-OUT event timer id 95
+[2024-07-31 03:06:30.133] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:30.135] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:30.135] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:32.345] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:32.345] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:40.134] [upf_app] [info] TIME-OUT event timer id 97
+[2024-07-31 03:06:40.134] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:40.135] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:40.135] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:42.346] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:42.346] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:06:50.134] [upf_app] [info] TIME-OUT event timer id 99
+[2024-07-31 03:06:50.134] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:06:50.136] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:06:50.136] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:06:52.347] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:06:52.347] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:00.134] [upf_app] [info] TIME-OUT event timer id 101
+[2024-07-31 03:07:00.134] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:00.135] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:00.135] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:02.347] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:02.348] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:10.136] [upf_app] [info] TIME-OUT event timer id 103
+[2024-07-31 03:07:10.137] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:10.139] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:10.139] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:12.348] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:12.348] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:20.138] [upf_app] [info] TIME-OUT event timer id 105
+[2024-07-31 03:07:20.138] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:20.142] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:20.142] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:22.350] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:22.350] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:30.139] [upf_app] [info] TIME-OUT event timer id 107
+[2024-07-31 03:07:30.139] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:30.140] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:30.140] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:32.351] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:32.351] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:40.139] [upf_app] [info] TIME-OUT event timer id 109
+[2024-07-31 03:07:40.139] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:40.141] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:40.141] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:42.351] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:42.351] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:07:50.139] [upf_app] [info] TIME-OUT event timer id 111
+[2024-07-31 03:07:50.139] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:07:50.142] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:07:50.143] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:07:52.353] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:07:52.353] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:00.141] [upf_app] [info] TIME-OUT event timer id 113
+[2024-07-31 03:08:00.141] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:00.142] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:00.142] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:02.354] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:02.354] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:10.141] [upf_app] [info] TIME-OUT event timer id 115
+[2024-07-31 03:08:10.141] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:10.142] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:10.142] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:12.355] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:12.355] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:20.141] [upf_app] [info] TIME-OUT event timer id 117
+[2024-07-31 03:08:20.141] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:20.143] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:20.143] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:22.355] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:22.356] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:30.143] [upf_app] [info] TIME-OUT event timer id 119
+[2024-07-31 03:08:30.143] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:30.144] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:30.144] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:32.356] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:32.356] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:40.143] [upf_app] [info] TIME-OUT event timer id 121
+[2024-07-31 03:08:40.143] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:40.145] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:40.145] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:42.357] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:42.357] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:08:50.143] [upf_app] [info] TIME-OUT event timer id 123
+[2024-07-31 03:08:50.143] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:08:50.145] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:08:50.145] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:08:52.363] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:08:52.363] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:00.143] [upf_app] [info] TIME-OUT event timer id 125
+[2024-07-31 03:09:00.143] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:00.144] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:00.144] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:02.363] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:02.363] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:10.143] [upf_app] [info] TIME-OUT event timer id 127
+[2024-07-31 03:09:10.143] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:10.146] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:10.146] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:12.364] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:12.364] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:20.144] [upf_app] [info] TIME-OUT event timer id 129
+[2024-07-31 03:09:20.144] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:20.145] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:20.145] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:22.368] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:22.368] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:30.144] [upf_app] [info] TIME-OUT event timer id 131
+[2024-07-31 03:09:30.144] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:30.145] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:30.145] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:32.369] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:32.369] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:40.144] [upf_app] [info] TIME-OUT event timer id 133
+[2024-07-31 03:09:40.144] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:40.147] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:40.147] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:42.370] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:42.370] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:09:50.145] [upf_app] [info] TIME-OUT event timer id 135
+[2024-07-31 03:09:50.145] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:09:50.147] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:09:50.147] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:09:52.370] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:09:52.371] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:00.147] [upf_app] [info] TIME-OUT event timer id 137
+[2024-07-31 03:10:00.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:00.149] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:00.149] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:02.371] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:02.371] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:10.147] [upf_app] [info] TIME-OUT event timer id 139
+[2024-07-31 03:10:10.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:10.149] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:10.149] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:12.372] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:12.372] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:20.147] [upf_app] [info] TIME-OUT event timer id 141
+[2024-07-31 03:10:20.147] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:20.150] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:20.150] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:22.372] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:22.372] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:30.149] [upf_app] [info] TIME-OUT event timer id 143
+[2024-07-31 03:10:30.149] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:30.151] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:30.151] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:32.373] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:32.373] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:40.149] [upf_app] [info] TIME-OUT event timer id 145
+[2024-07-31 03:10:40.149] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:40.151] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:40.152] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:42.374] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:42.374] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:10:50.149] [upf_app] [info] TIME-OUT event timer id 147
+[2024-07-31 03:10:50.150] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:10:50.152] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:10:50.152] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:10:52.374] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:10:52.374] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:00.151] [upf_app] [info] TIME-OUT event timer id 149
+[2024-07-31 03:11:00.151] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:00.153] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:00.153] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:02.375] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:02.375] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:10.152] [upf_app] [info] TIME-OUT event timer id 151
+[2024-07-31 03:11:10.152] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:10.154] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:10.154] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:12.375] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:12.375] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:20.152] [upf_app] [info] TIME-OUT event timer id 153
+[2024-07-31 03:11:20.152] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:20.154] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:20.154] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:22.376] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:22.376] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:30.152] [upf_app] [info] TIME-OUT event timer id 155
+[2024-07-31 03:11:30.152] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:30.154] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:30.154] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:32.377] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:32.377] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:40.152] [upf_app] [info] TIME-OUT event timer id 157
+[2024-07-31 03:11:40.152] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:40.154] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:40.154] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:42.377] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:42.377] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:11:50.153] [upf_app] [info] TIME-OUT event timer id 159
+[2024-07-31 03:11:50.153] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:11:50.155] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:11:50.155] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:11:52.378] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:11:52.378] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:00.153] [upf_app] [info] TIME-OUT event timer id 161
+[2024-07-31 03:12:00.153] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:00.156] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:00.156] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:02.378] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:02.378] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:10.153] [upf_app] [info] TIME-OUT event timer id 163
+[2024-07-31 03:12:10.154] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:10.156] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:10.156] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:12.382] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:12.382] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:20.154] [upf_app] [info] TIME-OUT event timer id 165
+[2024-07-31 03:12:20.154] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:20.156] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:20.156] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:22.385] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:22.385] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:30.154] [upf_app] [info] TIME-OUT event timer id 167
+[2024-07-31 03:12:30.154] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:30.156] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:30.157] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:32.385] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:32.385] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:40.154] [upf_app] [info] TIME-OUT event timer id 169
+[2024-07-31 03:12:40.154] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:40.157] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:40.157] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:42.386] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:42.386] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:12:50.155] [upf_app] [info] TIME-OUT event timer id 171
+[2024-07-31 03:12:50.155] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:12:50.157] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:12:50.157] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:12:52.386] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:12:52.386] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:00.155] [upf_app] [info] TIME-OUT event timer id 173
+[2024-07-31 03:13:00.155] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:00.157] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:00.157] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:02.388] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:02.388] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:10.155] [upf_app] [info] TIME-OUT event timer id 175
+[2024-07-31 03:13:10.155] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:10.158] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:10.158] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:12.392] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:12.393] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:20.156] [upf_app] [info] TIME-OUT event timer id 177
+[2024-07-31 03:13:20.156] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:20.161] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:20.161] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:22.395] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:22.395] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:30.156] [upf_app] [info] TIME-OUT event timer id 179
+[2024-07-31 03:13:30.156] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:30.158] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:30.158] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:32.396] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:32.396] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:40.156] [upf_app] [info] TIME-OUT event timer id 181
+[2024-07-31 03:13:40.156] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:40.159] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:40.159] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:42.398] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:42.398] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:13:50.157] [upf_app] [info] TIME-OUT event timer id 183
+[2024-07-31 03:13:50.157] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:13:50.159] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:13:50.159] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:13:52.399] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:13:52.399] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:00.157] [upf_app] [info] TIME-OUT event timer id 185
+[2024-07-31 03:14:00.157] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:00.160] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:00.160] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:02.400] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:02.400] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:10.157] [upf_app] [info] TIME-OUT event timer id 187
+[2024-07-31 03:14:10.158] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:10.160] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:10.160] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:12.401] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:12.401] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:20.158] [upf_app] [info] TIME-OUT event timer id 189
+[2024-07-31 03:14:20.158] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:20.161] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:20.161] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:22.414] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:22.414] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:30.158] [upf_app] [info] TIME-OUT event timer id 191
+[2024-07-31 03:14:30.159] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:30.162] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:30.162] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:32.415] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:32.415] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:40.159] [upf_app] [info] TIME-OUT event timer id 193
+[2024-07-31 03:14:40.160] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:40.163] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:40.163] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:42.415] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:42.415] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:14:50.160] [upf_app] [info] TIME-OUT event timer id 195
+[2024-07-31 03:14:50.160] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:14:50.165] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:14:50.165] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:14:52.419] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:14:52.419] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:00.160] [upf_app] [info] TIME-OUT event timer id 197
+[2024-07-31 03:15:00.160] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:00.163] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:00.163] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:02.420] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:02.420] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:10.160] [upf_app] [info] TIME-OUT event timer id 199
+[2024-07-31 03:15:10.161] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:10.167] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:10.168] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:12.421] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:12.421] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:20.161] [upf_app] [info] TIME-OUT event timer id 201
+[2024-07-31 03:15:20.161] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:20.163] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:20.163] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:22.422] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:22.422] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:30.163] [upf_app] [info] TIME-OUT event timer id 203
+[2024-07-31 03:15:30.163] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:30.165] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:30.165] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:32.422] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:32.422] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:40.163] [upf_app] [info] TIME-OUT event timer id 205
+[2024-07-31 03:15:40.163] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:40.170] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:40.170] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:42.423] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:42.423] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:15:50.164] [upf_app] [info] TIME-OUT event timer id 207
+[2024-07-31 03:15:50.164] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:15:50.166] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:15:50.166] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:15:52.423] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:15:52.423] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:00.164] [upf_app] [info] TIME-OUT event timer id 209
+[2024-07-31 03:16:00.164] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:00.166] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:00.167] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:02.426] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:02.426] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:10.166] [upf_app] [info] TIME-OUT event timer id 211
+[2024-07-31 03:16:10.166] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:10.169] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:10.169] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:12.431] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:12.432] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:20.167] [upf_app] [info] TIME-OUT event timer id 213
+[2024-07-31 03:16:20.167] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:20.171] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:20.171] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:22.433] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:22.434] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:30.167] [upf_app] [info] TIME-OUT event timer id 215
+[2024-07-31 03:16:30.167] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:30.169] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:30.170] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:32.434] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:32.434] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:40.168] [upf_app] [info] TIME-OUT event timer id 217
+[2024-07-31 03:16:40.168] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:40.169] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:40.170] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:42.435] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:42.435] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:16:50.172] [upf_app] [info] TIME-OUT event timer id 219
+[2024-07-31 03:16:50.173] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:16:50.175] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:16:50.175] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:16:52.437] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:16:52.437] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:00.173] [upf_app] [info] TIME-OUT event timer id 221
+[2024-07-31 03:17:00.173] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:00.177] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:00.177] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:02.437] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:02.437] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:10.173] [upf_app] [info] TIME-OUT event timer id 223
+[2024-07-31 03:17:10.173] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:10.176] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:10.176] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:12.443] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:12.443] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:20.174] [upf_app] [info] TIME-OUT event timer id 225
+[2024-07-31 03:17:20.174] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:20.177] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:20.177] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:22.444] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:22.445] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:30.177] [upf_app] [info] TIME-OUT event timer id 227
+[2024-07-31 03:17:30.177] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:30.179] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:30.179] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:32.446] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:32.446] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:40.177] [upf_app] [info] TIME-OUT event timer id 229
+[2024-07-31 03:17:40.177] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:40.180] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:40.181] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:42.446] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:42.446] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:17:50.252] [upf_app] [info] TIME-OUT event timer id 231
+[2024-07-31 03:17:50.252] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:17:50.254] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:17:50.254] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:17:52.447] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:17:52.448] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:18:00.253] [upf_app] [info] TIME-OUT event timer id 233
+[2024-07-31 03:18:00.253] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:18:00.255] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:18:00.255] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:18:02.449] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:18:02.449] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:18:10.253] [upf_app] [info] TIME-OUT event timer id 235
+[2024-07-31 03:18:10.253] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:18:10.255] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:18:10.255] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:18:12.479] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:18:12.479] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:18:20.253] [upf_app] [info] TIME-OUT event timer id 237
+[2024-07-31 03:18:20.253] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:18:20.255] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:18:20.255] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:18:22.480] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:18:22.480] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:18:30.253] [upf_app] [info] TIME-OUT event timer id 239
+[2024-07-31 03:18:30.253] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:18:30.256] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:18:30.256] [upf_app] [info] Got successful response from NRF
+[2024-07-31 03:18:32.481] [upf_n4 ] [info] handle_receive(16 bytes)
+[2024-07-31 03:18:32.481] [upf_n4 ] [info] Received SX HEARTBEAT REQUEST
+[2024-07-31 03:18:40.254] [upf_app] [info] TIME-OUT event timer id 241
+[2024-07-31 03:18:40.254] [upf_app] [info] Send NF Update to NRF
+[2024-07-31 03:18:40.257] [upf_app] [info] Response from NRF, HTTP Code: 204
+[2024-07-31 03:18:40.257] [upf_app] [info] Got successful response from NRF
